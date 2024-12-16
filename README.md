@@ -1,2 +1,2 @@
 # CP
-Computer Programming
+My Personal Journey Into The World Of Computer Programming
