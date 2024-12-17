@@ -1,4 +1,8 @@
-# set & dict use [ ]
+# set & dict use { }
+# Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+# Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+
 weekdays = {
 
     1: 'Monday',
