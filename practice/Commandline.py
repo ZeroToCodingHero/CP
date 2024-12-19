@@ -8,3 +8,5 @@
 # ^ = scroll through previous commands
 # clear = control l / cls
 # control / = muilti line #
+# echo "This is a test file." > test.txt
+# cat test.txt = prints out the context of the file
