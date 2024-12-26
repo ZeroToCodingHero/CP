@@ -12,4 +12,11 @@ def say(phrase):
     print(phrase + " " + emoticon)
 
 
-#  doesn't run ?
+main()
+
+
+def main():
+    print("Hello")
+    return main
+
+main()
