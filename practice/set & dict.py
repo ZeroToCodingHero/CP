@@ -1,6 +1,7 @@
 # set use { }
 # set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
 # dict use { }
+# "year": 1964
 # dictionary is a collection which is ordered** and changeable. No duplicate members.
 
 
