@@ -1,6 +1,6 @@
 import random
 
-print("What is your name?", end=' ')
+print("What is your name?", end=" ")
 name = input()
 name = name.title().strip()
 
@@ -27,5 +27,5 @@ while True:
         print("Invaild Choice, Please Choose Again")
 
     play_again = input("play again? (y/n): ")
-    if play_again.lower()!= "y":
+    if play_again.lower() != "y":
         break
