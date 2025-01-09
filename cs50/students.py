@@ -1,9 +1,4 @@
-students = {
-    "Hermione": "Gryffindor",
-    "Harry": "Gryffindor",
-    "Ron": "Gryffindor",
-    "Draco": "Slytherin",
-    "Padma": "Ravenclaw",
-}
-for student in students:
-    print(student)
+with open("students.csv") as file:
+    for line in file:
+        row = line.rstrip().split(",")
+        print(f"{row[0]} is in {row[1]}")

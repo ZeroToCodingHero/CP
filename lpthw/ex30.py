@@ -1,8 +1,9 @@
-people = 30
+# define a variable with a integar value
+people = 50
 cars = 40
-trucks = 15
+trucks = 150
 
-if cars > people:
+if cars > people or trucks > cars:
     print ("We should take the cars.")
 
 elif cars < people:
@@ -10,14 +11,14 @@ elif cars < people:
 else:
     print("We can't decide.")
 
-if trucks > cars:
+if trucks > cars and people < trucks:
     print("That's too many trucks.")
 elif trucks < cars:
     print("Maybe we could take the trucks")
 else:
     print("We still can't decide.")
 
-if people > trucks:
+if not people > trucks:
     print("Alright, let's just take the trucks")
 else:
     print("Fine, let's stay home then.")

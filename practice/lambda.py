@@ -7,3 +7,7 @@ print(add(5,5))
 
 # lambda with two arguments (x,y:) with one line a expression (x+y) than two arguments (5,5)
 print((lambda x,y: x+y)(5,5))
+
+# Var    /      lambda / argument : / expressions
+square_lambda = lambda      x:          x**2
+print(square_lambda(5))
