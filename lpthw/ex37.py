@@ -1,0 +1,1 @@
+# printed the symbols review to study

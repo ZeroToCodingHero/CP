@@ -1,14 +1,8 @@
-my_str = "python"
-result = my_str[::-2]
+import random
 
-print(result)
+def dice_roll():
+    available_choices = range(7)
+    player = random.choice(available_choices)
+    print(player)
 
-rng = range(2, 10, 2)
-print(list(rng))
-
-print(rng)
-
-# PEP 8 = Python enhancement proposal
-# peps.python.org/pep-0008/
-# pylint \ pip install pylint \ pycodestylr / pycodestyle.pycqa.org
-# black \ pip install black
+dice_roll()

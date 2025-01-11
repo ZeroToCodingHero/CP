@@ -1,8 +1,7 @@
 import random
 
 print("What is your name?", end=" ")
-name = input()
-name = name.title().strip()
+name = input().title().strip()
 
 while True:
     user_choice = input(f"Welcome {name}, Enter a choice (rock, paper, scissors): ")

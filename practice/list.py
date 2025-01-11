@@ -1,9 +1,10 @@
-# list  use [ ]
-# Lists are used to store multiple items in a single variable
-# List is a collection which is ordered and changeable. Allows duplicate members.
+"""
+list  use [ ]
+Lists are used to store multiple items in a single variable
+List is a collection which is ordered and changeable. Allows duplicate members.
 
-# tuple use ( ,)
-# Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+"""
+
 
 this_list = ["apple", "banana", "cherry"]
 print(this_list[1])
