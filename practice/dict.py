@@ -21,3 +21,5 @@ weekdays[8] = 'test'
 print(weekdays)
 weekdays.pop(8)
 print(weekdays)
+
+# https://docs.python.org/3.13/tutorial/datastructures.html#dictionaries

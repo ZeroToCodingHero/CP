@@ -11,7 +11,7 @@ states = {
 cities = {
     'CA': 'San Francisco',
     'MI': 'Detriot',
-    'FL': 'jacksonville'
+    'FL': 'Jacksonville'
 }
 
 # add some more cities
@@ -35,23 +35,23 @@ print("Florida has: ", cities[states['Florida']])
 
 # print every state abbreviation
 print('-' * 10)
-for state, abbrev in list(states.item()):
+for state, abbrev in list(states.items()):
     print(f"{state} is abbreviated {abbrev}")
 
 # print every city in state
 print('-' * 10)
-for abbrev, city in list(cities.item()):
+for abbrev, city in list(cities.items()):
     print(f"{abbrev} has the city {city}")
 
 # now do both at the same time
 print('-' * 10)
-for state, abbrev in list(cities.item()):
+for state, abbrev in list(states.items()):
     print(f"{state} state is abbreviated {abbrev}")
-    print(f"and city {cities[abbrev]}")
+    print(f"and has city {cities[abbrev]}")
 
 print('-' * 10)
 # safely get a abbreviation by state that might not be there
-state = state.get('Texas')
+state = states.get('Texas')
 
 if not state:
     print("Sorry, no Taxas.")
