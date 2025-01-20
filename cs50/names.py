@@ -7,13 +7,10 @@ with open("names.txt") as file:
 for name in sorted(names, reverse=True):
     print(f"hello, {name}")
 
-# or
 
 # with open("names.txt") as file:
 #     for line in sorted(file):
 #         print("hello,", line.rstrip())
-
-
 
 # with open("names.txt", "r") as file:
 #     for line in file:
@@ -24,7 +21,6 @@ for name in sorted(names, reverse=True):
 # with open("names.txt", "a") as file:
 #     file.write(f"{name}\n")
 
-
 # names = []
 
 # for _ in range(3):
@@ -32,4 +28,4 @@ for name in sorted(names, reverse=True):
 # for name in sorted(names):
 #     print(f"hello, {name}")
 
-# #docs.python,org/3/library/functions.html#open
+# docs.python,org/3/library/functions.html#open

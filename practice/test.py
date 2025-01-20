@@ -6,3 +6,9 @@ def dice_roll():
     print(player)
 
 dice_roll()
+
+
+x = 5
+y = 2
+result = x ** y
+print(result)
