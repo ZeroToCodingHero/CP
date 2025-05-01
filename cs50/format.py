@@ -1,7 +1,7 @@
 import re 
 
 name = input("Enter your name? ").strip().lower()
-re.search(r"^(.+), (.+)$", name, re.IGNORECASE)
+matches = re.search(r"^(.+), (.+)$", name, re.IGNORECASE)
 if matches:
     last, first = matches.groups()
     name = f"{first.strip()} {last.strip()}"
