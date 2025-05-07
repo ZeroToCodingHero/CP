@@ -9,4 +9,7 @@ def main():
     if match:
         print(f"Valid. Matched with {match.group()}")
     else:
-        print("Invalid.")    
+        print("Invalid.")
+
+
+main()

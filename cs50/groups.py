@@ -12,3 +12,5 @@ def main():
         print(locations[country_code])
     else:
         print("Invalid")
+
+main()
