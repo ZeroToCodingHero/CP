@@ -1,5 +1,5 @@
 print("Better Calculator")
-def calculator (num1,num2,operation):
+def main (num1,num2,operation):
     if operation == '+':
         result = num1 + num2
         print(f'{num1} + {num2} = {result}')
@@ -14,3 +14,6 @@ def calculator (num1,num2,operation):
         print(f'{num1} / {num2} = {result}')
     else:
         print('Invaild Operator')
+
+
+main()

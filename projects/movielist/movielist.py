@@ -5,9 +5,9 @@ import pandas as pd
 
 script = argv
 prompt = '> '
-directory_path = 'Z:/#-q Movies'
-directory_list =  os.listdir('Z:/#-q Movies')
-python_files = 'D:/Coding/movielist'
+directory_path = 'Z:\movies'
+directory_list =  os.listdir('Z:\movies')
+python_files = 'D:/01-eo/Coding/python/CP/projects/movielist'
 number_of_folders = len(directory_list)
 
 # writing to a txt file 
@@ -23,7 +23,7 @@ with open(file_path, 'w') as file:
 #                   index = None)
 
 print()
-print("\tWelcome to my Plex library,",end=' ')
+print("\tWelcome to my JellyFin library,",end=' ')
 print(f"You have {number_of_folders} movies to choice from." )
 print()
 print("\tHere are the available movies")

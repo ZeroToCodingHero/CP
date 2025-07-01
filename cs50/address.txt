@@ -1,0 +1,173 @@
+[MUSIC PLAYING]
+
+SPEAKER: Well, hello one and all, and welcome
+to our short on list and dictionary comprehensions.
+In Python, this idea of a comprehension is a quick way
+to build up a list or a dictionary from data you already have.
+Now, if you've been to Boston, you might have been to the John F. Kennedy
+Presidential Museum and Library.
+This is, in fact, a museum and library dedicated
+to John F. Kennedy, a famous politician from the Boston area.
+So I have here a program called comprehensions.py
+that looks at one of the addresses, the speeches
+that Kennedy gave when he took office as president of the United States.
+Here is a file called address.txt, which actually
+includes the full text of Kennedy's inauguration
+address that, again, he gave when he became the president of the United
+States.
+In comprehensions.py, my goal is to analyze this address,
+looking for what words Kennedy used as he took that office.
+So let me walk you through the program here.
+I have here a dictionary called counts, initially empty, but as I go,
+I'll build up this dictionary down below.
+I also get this list of words using this function that I made called get_words.
+You don't need to know how it works.
+Just know that it simply opens up this file, address.txt, and returns to me
+a list of individual words found in this text file here.
+So, for instance, one of the words in the list might be "we."
+Another word might be "observe" and "today" and "not."
+I simply get back this file as a list of the words inside of it.
+Now in comprehensions.py with that list, what do I do?
+I simply iterate over each word in this list, and I'll ask a question.
+If I've already added this word to my counts dictionary,
+I'll increase its count by 1.
+If that word is not in my dictionary, though, I'll set its count to 1.
+And this way, at the end of this loop, I have in my dictionary
+one key for every word in address.txt and a value which
+corresponds to how many times that word shows up in Kennedy's address.
+I'll then save this dictionary in the form
+of a csv using this save_counts function that, again, I wrote myself.
+So why don't I go ahead and run comprehensions.py,
+and let's see what we get.
+I'll open up, in this case, counts.csv, and this is the output of this program.
+So you'll see here words on the left and counts on the right.
+And in this case, it seems like the word "the" appears 83 times.
+The word "of" appears 66 times, and "and" appears 37 times.
+So seems like we're off to a good start.
+This seems to be working.
+But there is, in fact, a bug, and what is that bug?
+Well, if I look at this word "the" here, notice how it's all in lowercase, t-h-e.
+If I try to find the word "the" elsewhere in this file,
+I bet I probably could.
+Here's "the" at the very top.
+That's "them.".
+That's not "the".
+Other "the"?
+So here is "the" with a capital T in T-H-E.
+So it seems like when we iterate over our words here, some of them
+are lowercase, some of them are title case,
+and those two words are seen as different.
+We're not comparing words case insensitively.
+So one quick fix here is actually to convert all the words
+in this list to lowercase.
+So let's try that.
+In comprehensions.py, I now have this list of words
+that I got directly from address.txt.
+It maintains that capitalization.
+But what I really want is a list of lowercase words
+that I could then iterate over just like this.
+Now the question then becomes, how do I make this list of lowercase words?
+Well, if you're familiar, I could use a loop.
+I could iterate over every word in my list of words,
+changing them to lowercase, appending them to some new list.
+I could do that, or I could use a list comprehension.
+These are great ways to build up a new list from some list you already have.
+So here I have this list of words, but I want to transform it.
+I want to take every word in this list and convert
+it to lowercase, giving myself back a new list at the end.
+So to make a list comprehension, there are a few pieces of syntax.
+One is that list syntax here, these brackets,
+which indicate I'm making some new list.
+But inside of this syntax here, you don't type your own individual words,
+like I wouldn't type "the" or whatever comes next, "country" for instance.
+I, instead, use a certain kind of for loop.
+I'm going to iterate over every element in my previous list
+and do some transformation to it.
+So let's see the simplest list comprehension I could make here.
+I could say word for word in words, a bit like English.
+What I'm saying here is I want a list, and this list
+will be composed of the word element for each word that I have in words.
+Or another way of putting this is I'm really getting back the exact same list.
+I'm asking for every word that exists in my words
+list, every element in this list, give me back
+that element unchanged as a new list.
+Now, this isn't really interesting.
+It isn't really helping me here, but what would help me is this.
+I could transform this word in any way I want to.
+I could make it lowercase, for instance, by typing word.lower.
+In this case, what I'm now asking for is the lowercase version
+of each word in the words list as a new list, and this is my list comprehension.
+I'm still iterating over every word in the words list,
+but I'm now transforming what I get back into lowercase
+and giving the entire thing back to me as a new list.
+No need for a separate loop here.
+I'm doing this all on one line.
+So let's see if it works.
+If I run python of comprehensions.py, I'll then go back to counts.csv.
+And if I scroll up, well, it seems like we've consolidated our values for "the".
+We no longer have a title case "the" or lowercase "the".
+We just have only lowercase "the" and an appropriate count, in this case.
+So again, comprehensions great for transforming your lists
+for some other use case, and this is what
+I've done to help us lowercase all those words there.
+Now, list comprehensions, you can also use them to filter your lists,
+if you'd like.
+So let's say I don't just want every word in this list of words now converted
+to lowercase.
+Maybe I only want those that are longer than four letters, for instance,
+getting to the more interesting words Kennedy
+spoke about when he gave his inauguration address.
+I could append here an if statement.
+If, let's say, the length of this word is greater than four,
+we'll only include it in this list if this condition is true.
+So let's read this, again a bit like English.
+What I'm asking for here again is every word in this list of words,
+but I want to tweak every word just a little bit.
+I want to make every word lowercase, and I only
+want to include it if the length of that word is greater than four.
+Let's try this.
+I'll run Python of comprehensions.py.
+I'll go back to counts.csv, and now I see here
+only those words that are greater than four letters long.
+And so we see here the word "world" appearing eight times,
+which makes sense because when Kennedy gave his address,
+he was talking about the US's place in the world.
+Well, let's see.
+We've made here a list comprehension, but we also
+promised to talk about dictionary comprehensions.
+So if I look at this loop down below, I can actually
+simplify this using a dictionary comprehension
+because a dictionary comprehension is doing much the same thing.
+It's going to iterate over every element in some list
+and build up for me a dictionary based on those elements.
+So let's try making our own dictionary comprehension.
+I'll, instead of setting counts up above, what if I did this?
+I could say let's make the dictionary counts here,
+but let's do it in a way that is a little more Pythonic.
+Well, I can use this same loop syntax for blank in blank.
+I could say for word in words.
+I'm building up this dictionary by looking at every word in the words list.
+And now what do I want to do with every word in the words list?
+Well, I want this word to become a key in my dictionary,
+and I want the corresponding value to be the number of times
+that word appears in the words list.
+So this here is my dictionary comprehension,
+if I actually use lowercase here for lowercase words.
+And let's read it now a little bit more like English.
+I'm again iterating over every word that I have in my lowercase words list,
+but now I'm building up a dictionary as I go.
+I'm saying for every word in this list of lowercase words,
+let's do the following.
+Give me a key called word, and set the value to the count
+that this word appears in the lowercase words list, just like this.
+So here, I've replaced that entire loop with my now dictionary comprehension,
+a way of building up this dictionary by using some more Pythonic syntax.
+I'll now run python of comprehensions.py,
+and I'll look at counts.csv, and we'll see the same results.
+Really, I've just simplified what I had before.
+So this then can be my entire program.
+I've taken a program that was upwards of 15, 20 lines
+and shortened it down, in this case, to just four or so in the main function.
+This is the power of list and dictionary comprehensions.
+Hope you enjoyed this short.
+We'll see you next time.
