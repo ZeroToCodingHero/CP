@@ -2,12 +2,19 @@ from sys import argv
 from pathlib import Path
 import os
 
+print("\tWelcome to my JellyFin library,",end=' ')
+print("\tCopy path directory here, {prompt}")
+
 script = argv
 prompt = '> '
 directory_path = 'Z:\movies'
 directory_list =  os.listdir('Z:\movies')
 python_files = 'D:/01-eo/Coding/python/CP/projects/movielist'
 number_of_folders = len(directory_list)
+
+
+
+# creating a txtfile ...
 
 # writing to a txt file 
 file_path = os.path.join(python_files, 'movielist.txt')
@@ -17,7 +24,7 @@ with open(file_path, 'w') as file:
         file.write(item + '\n')
 
 print()
-print("\tWelcome to my JellyFin library,",end=' ')
+
 print(f"You have {number_of_folders} movies to choice from." )
 print()
 print("\tHere are the available movies")
