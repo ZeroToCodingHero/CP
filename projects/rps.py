@@ -4,7 +4,7 @@ print("What is your name?", end=" ")
 name = input().title().strip()
 
 while True:
-    user_choice = input(f"Welcome {name}, Enter a choice (rock, paper, scissors): ")
+    user_choice = input(f"Welcome {name}, Enter a choice (rock, paper, scissors): ").lower().strip()
     available_choices = ["rock", "paper", "scissors"]
     computer_choice = random.choice(available_choices)
 
@@ -25,6 +25,6 @@ while True:
     else:
         print("Invaild Choice, Please Choose Again")
 
-    play_again = input("play again? (y/n): ")
+    play_again = input("play again? (y/n): ").lower().strip()
     if play_again.lower() != "y":
         break
