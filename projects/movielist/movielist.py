@@ -4,10 +4,10 @@ import os
 
 script = argv
 prompt = '> '
-directory_path = 'Z:\movies'
+directory_path = 'Z:\movies' # which directory to search
 directory_list =  os.listdir('Z:\movies')
-python_files = 'D:/01-eo/Coding/python/CP/projects/movielist'
-number_of_folders = len(directory_list)
+python_files = 'D:/01-eo/Coding/python/CP/projects/movielist' # where to save your file
+number_of_folders = len(directory_list) 
 
 # writing to a txt file 
 file_path = os.path.join(python_files, 'movielist.txt')

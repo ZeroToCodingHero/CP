@@ -8,40 +8,17 @@ d = ("Make it a warm coat, actually")
 e = ("I think gloves are in order")
 r = ("Don't forget your umbrella")
 
-if forecast >= 20 and rain == "no":
+if forecast >= 20:
     print(a)
-elif forecast >= 20 and rain == "yes":
-    print(a)
-    print(r)
-elif forecast > 10 and forecast <= 19 and rain == "no":
-    print(a)
+if forecast >= 10 and forecast <= 19:
     print(b)
-elif forecast > 10 and forecast <= 19 and rain == "yes":
-    print(a)
-    print(b)
-    print(r)
-elif forecast >= 5 and forecast <= 10 and rain == "no":
-    print(a)
-    print(b)
+if forecast >= 5 and forecast <= 9:
     print(c)
-elif forecast >= 5 and forecast <= 10 and rain == "yes":
-    print(a)
-    print(b)
-    print(c)
-    print(r)
-elif forecast < 5 and rain == "no":
-    print(a)
-    print(b)
-    print(c)
+if forecast <= 4:
     print(d)
     print(e)
-    print(c)
-elif forecast < 5 and rain == "yes":
-    print(a)
-    print(b)
-    print(c)
-    print(d)
-    print(e)
+if rain == "yes":  
     print(r)
 else:
     ("print invaild anwser")
+   
