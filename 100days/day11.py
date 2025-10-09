@@ -1,15 +1,19 @@
 print (" *** Day 11 How many seconds in a year*** ")
 
-year = int(input("Enter the year: "))
-seconds = 365 * 24 * 60 * 60
-leap_year = (2000, 2004, 2008, 2012, 2016, 2020, 2024)
+days_this_year = int(input("How many days are in this year? "))
 
-if year == leap_year:
-    print("This is a leap year")
-    print("There are", seconds + 86400, "seconds in this year")
+days_in_year = 365
+days_in_leapyear = 366
+hours_in_day = 24
+minutes_in_hour = 60
+seconds_in_minute = 60
+
+result = days_in_year * hours_in_day * minutes_in_hour * seconds_in_minute
+leapyear_results = days_in_leapyear * hours_in_day * minutes_in_hour * seconds_in_minute
+
+
+if days_this_year == 366:
+    print("Numbers of seconds in a leap year are", leapyear_results)
 else:
-    print("This is not a leap year")
-    print("There are", seconds, "seconds in this year")
-
-
-# does not work, need to come back and fix it
+    print("Number of seconds in a year are", result)
+    

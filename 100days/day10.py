@@ -1,7 +1,7 @@
 print("*** Welcome to the tip calculator ***")
 mybill = float(input("Enter your bill: "))
 numberofpeople = int(input("Enter the number of people: "))
-tip =int(input("Enter the tip percentage: "))
+tip = int(input("Enter the tip percentage: "))
 answer = mybill / numberofpeople
 answer = round(answer, 2)
 

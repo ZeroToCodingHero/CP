@@ -1,4 +1,5 @@
 print("***FAKE FAN FINDER***")
+print("---------------------")
 
 fakefan = input("what is your favarite super hero? ")
 if fakefan == "batman":
@@ -21,3 +22,4 @@ elif fakefan == "superman":
     print("try again")
 else:
   print("you are a fake fan")
+  

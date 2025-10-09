@@ -2,7 +2,7 @@ from getpass import getpass as input # hide user input
 from emoji import emojize
 
 
-print("*** Rock 🪨, Paper 📄, Scissors ✂️***")
+print("*** Rock  🪨, Paper 📄, Scissors ✂️***")
 player1 = input("player1, please enter 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ")
 player2 = input("player2, please enter 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ")
 
