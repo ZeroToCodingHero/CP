@@ -1,7 +1,7 @@
 # def = function = A block of reusable code
                  # place () after the function name to invoke it
 user_name = input("What is your name? ")
-user_age = input("What is your age? ")
+user_age = int(input("What is your age? "))
 user_weight = float(input("What is your weight in lbs? "))
 user_height = float(input("What is your height in inches? "))
 

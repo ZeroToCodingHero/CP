@@ -1,12 +1,29 @@
-print("Testing\nGround")
+forecast = int(input("What is the weather forcast tomorrow? "))
+print(forecast)
+rain = (input("Will it rain? (yes/no)"))
 
-name_a_food = input("> ")
-name_a_type_of_plant = input("> ")
-name_a_method_of_cooking = input("> ")        
-what_word_describes_burned_food = input("> ")
-name_a_diy_item = input("> ")
 
-print("MENU")
-print("Saute " + name_a_food + " with " + name_a_type_of_plant + " on a bed of " 
-      + name_a_diy_item + " and " + name_a_method_of_cooking + " until " 
-      + what_word_describes_burned_food + ".")
+
+
+if forecast == (20) and rain == "no":
+    printf
+elif forecast == (20) and rain == "yes":
+    print("Wear jeans and Don't forget your umbrella")
+elif forecast == (15) and rain == "no":
+    print("Wear jeans and a t-shirt")
+    print("I recommend a jumper as well")
+    print("Take a jacket with you")
+elif forecast == (15) and rain == "yes":
+    print("Wear jeans and a T-shirt")
+    print("I recommand a jumper as well")
+    print("Take a jacket with you")
+    print("Don't forget your umbrella")
+elif forecast == (10) and rain == "no":
+    print("Make it a warm coat, actually")
+    print("I think gloves are in order")
+elif forecast == (10) and rain == "yes":
+    print("Make it a warm coat, actually")
+    print("I think gloves are in order")
+    print("Don't forget your umbrella")
+else:
+    print("invaild answer")
