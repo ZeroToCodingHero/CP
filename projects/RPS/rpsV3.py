@@ -4,8 +4,8 @@ import tkinter # ?
 print("***Rock🪨 Paper📄 Scissors✂️***")
 
 while True:
-    player1 = input("player1, please enter 'R' for Rock🪨  'P' for Paper📄 or 'S' Scissors✂️ > ").upper().strip()
-    player2 = input("player2, please enter 'R' for Rock🪨  'P' for Paper📄 or 'S' Scissors✂️ > ").upper().strip()
+    player1 = input("player1, please enter 'R' for Rock 🪨  'P' for Paper 📄 or 'S' Scissors ✂️ > ").upper().strip()
+    player2 = input("player2, please enter 'R' for Rock 🪨  'P' for Paper 📄 or 'S' Scissors ✂️ > ").upper().strip()
     if player1 == player2:
         print("It's a tie!")
     elif player1 == 'R' and player2 == 'P':

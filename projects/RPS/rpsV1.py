@@ -1,4 +1,4 @@
-from getpass import getpass as input # hide user input
+from getpass import getpass as input  # hide user input
 
 print("E P I C    🪨  📄 ✂️    B A T T L E ")
 print("Select your move (R, P, or S)")
