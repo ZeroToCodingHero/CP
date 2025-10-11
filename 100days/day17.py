@@ -1,37 +1,56 @@
-# continue starts the while loop again
-# break stops the while loop
-# exit stops the program
-# pass does nothing
-# return returns a value from a function
-# yield returns a value from a function and pauses the function
+from getpass import getpass as input
 
-from getpass import getpass as input # hide user input
-from emoji import emojize
 
-counter = 1
+print("E P I C    🪨  📄 ✂️    B A T T L E ")
+print()
+print("Select your move (R, P or S)")
+print()
+#hint: create these variables outside loop and then add += with correct player to keep score throughout
+player1_score = 0
+player2_score = 0
+#hint: that the while loop needs to go around all code and then highlight the rest of the code and hit tab once. 
 while True: 
-        print("*** Rock🪨, Paper📄, Scissors✂️***") 
-        player1 = input("player1, please enter 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ").lower().replace(" ", "")
-        player2 = input("player2, please enter 'R' for Rock, 'P' for Paper, or 'S' for Scissors: ").lower().replace(" ", "")
+  player1Move = input("Player 1 > ")
+  print()
+  player2Move = input("Player 2 > ")
+  print()
+  
+  if(player1Move=="R"):
+    if(player2Move=="R"):
+      print("You both picked Rock, draw!")
+    elif(player2Move=="S"):
+      print("Player1 smashed Player2's Scissors into dust with their Rock!")
+      player1_score += 1
+    elif(player2Move=="P"):
+      print("Player1's Rock is smothered by Player2's Paper!")
+      player2_score += 1
+  elif(player1Move=="P"):
+    if(player2Move=="R"):
+      print("Player2's Rock is smothered by Player1's Paper!")
+      player1_score += 1
+    elif(player2Move=="S"):
+      print("Player1's Paper is cut into tiny pieces by Player2's Scissors!")
+      player2_score += 1
+    elif(player2Move=="P"):
+      print("Two bits of paper flap at each other. Dissapointing. Draw.")
+  elif(player1Move=="S"):
+    if(player2Move=="R"):
+      print("Player 2's Rock makes metal-dust out of Player1's Scissors")
+      player2_score += 1
+    elif(player2Move=="S"):
+      print("Ka-Shing! Scissors bounce off each other like a dodgy sword fight! Draw.")
+    elif(player2Move=="P"):
+      print("Player1's Scissors make confetti out of Player2's paper!")
+      player1_score += 1
+  
+# hint: make sure you add player scores at the end of all the options but still inside the while loop.
+  print("Player 1 has", player1_score, "wins.")
+  print("Player 2 has", player2_score, "wins.")
 
-        if player1 == player2:
-                print("It's a tie!")
-        elif player1 == "R" and player2 == "P":
-                print("Player2 wins! 📄 beats 🪨")
-        elif player1 == "P" and player2 == "S":
-                print("Player2 wins! ✂️ beats 📄")
-        elif player1 == "S" and player2 == "R":
-                print("Player2 wins! 🪨 beats ✂️")
-        elif player2 == "R" and player1 == "P":
-                print("Player1 wins! 📄 beats 🪨")
-        elif player2 == "P" and player1 == "S":
-                print("Player1 wins! ✂️ beats 📄")
-        elif player2 == "S" and player1 == "R":
-                print("Player1 wins! 🪨 beats ✂️")
-                counter += 1
-                
-                continue
-        else:
-                print("Invalid input!")
-                continue
-        exit() # exit the program if the input is invalid
+  if player1_score==3 or player2_score==3:
+    print("Thanks for playing!")
+    exit()
+  else:
+    continue
+  
+# Got completley lost and needed help. 
