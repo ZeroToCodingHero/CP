@@ -9,7 +9,7 @@ player2_score = 0
 available_choices = ["R", "P", "S"]
 
 while True:
-    # Get and validate Player 1's move
+    # Get and validate Player 1s move
     player1Move = input("Player 1 > ").upper().strip()
     if player1Move not in available_choices:
         print("Invalid input for Player 1! Choose R, P, or S.")

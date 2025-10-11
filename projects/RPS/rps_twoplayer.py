@@ -51,4 +51,3 @@ while True:
     elif player2_score == 3:
         print("Player 2 is the champion! Thanks for playing!")
         break
-
