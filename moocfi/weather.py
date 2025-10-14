@@ -10,15 +10,26 @@ r = ("Don't forget your umbrella")
 
 if forecast >= 20:
     print(a)
-if forecast >= 10 and forecast <= 19:
+    if rain == "yes":
+        (print(r))
+if forecast >= 10 and forecast < 20:
+    print(a)
     print(b)
-if forecast >= 5 and forecast <= 9:
+    if rain == "yes":
+        print(r)
+if forecast >= 5 and forecast < 10:
+    print(a)
+    print(b)
     print(c)
-if forecast <= 4:
+    if rain == "yes":
+        print(r)
+if forecast < 5:
+    print(a)
+    print(b)
+    print(c)
     print(d)
     print(e)
-if rain == "yes":  
-    print(r)
+    if rain == "yes":
+        print(r)
 else:
     ("print invaild anwser")
-   
