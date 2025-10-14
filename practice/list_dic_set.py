@@ -1,5 +1,5 @@
 """
-list  use [ ]
+list use [ ]
 lists are used to store multiple items in a single variable
 list is a collection which is ordered and changeable. Allows duplicate members.
 """
