@@ -23,12 +23,20 @@
                     <a href="#how_to">How to learn HTML</a>
                 </li>
             </ul>
-        </nav>
+        </nav><!--navigation links area-->
 
         <hr><!--horizontal rule-->
     <section id="html">
         <h2>I'm ready to learn HTML</h2>
         <p>This is my first web page.</p><!--paragraph-->
+        <img src="img/html_logo_300x300.png" alt="HTML5 logo" title="I am learning html5"
+        width="150" height="150">
+        <figure>
+            <figcaption>An example of HTML5 code</figcaption>
+            <p>
+                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code><!--how to add code sample-->
+            </p>
+        </figure>
         <h3>My daily schedule</h3>
         <p>Let me tell you how:
             <br>... I learn more about web dev.
@@ -37,13 +45,23 @@
             title="Clown World">
                 <a href="https://en.wiktionary.org/wiki/clown_world">CW</a>
             </abbr>
-            <br><!--line break-->
+            <br><!--line break--><!--br*150 this makes muiltple line break-->
         </p>
+        <figure>
+            <img src="img/caribbean.jpg" alt="Caribbean_Beach" title="Caribbean Beach" 
+            width="200" height="150" loading="lazy"><!--eager/defult hides img below the fold-->
+                <figcaption>Caribbean Beach Getaway</figcaption><!--adds test under img-->
+        </figure>
     </section>
         <hr>
     <section id="how_to">
-        <h2>I am also planning a to <em>learn more</em></h2><!--inline elements <em>-->
-        <p><strong>Never</strong> give up.</p>
+        <h2>I am also planning to <em>learn more</em></h2><!--inline elements <em>-->
+        <p><strong>Never</strong>give up.</p>
+        <figure>
+            <img src="img/vacation.jpg" alt="Cancun" title="It's 5 o'Clock Somewhere" 
+            width="200" height="150" loading="lazy">
+                <figcaption>Caribbean Beach img</figcaption>
+        </figure> 
 
         <h3>My daily schedule</h3>
         <p>Let me tell you how:</p>
@@ -54,7 +72,7 @@
             </ol><!--ordered list-->
             <ul>
                 <li>rest</li>
-                <li>relax</li>
+                <li>relax</li>      
             </ul><!--unordered list-->   
     </section>   
         <hr>
@@ -66,6 +84,7 @@
             Clown World<br>
             123 no where<br>
         </address>
+        
     </footer>   
     </body><!--what is see on the webpage-->
 </html>
