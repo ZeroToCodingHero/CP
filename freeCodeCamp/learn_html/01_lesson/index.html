@@ -5,77 +5,79 @@
         <meta name="author" content="z2ch">
         <meta name="description" content="describe what the webpage is about"><!--alt z to wrap you text-->
         <title>My First Web Page</title><!--webpage tab-->
-        <link rel="icon" href="html5icon.png" type="image/x-icon"><!--icon in webpage tab-->
+        <link rel="icon" href="img/html5icon.png" type="image/x-icon"><!--icon in webpage tab-->
         <link rel="stylesheet" href="main.css" type="text/css"><!--dark mode-->
 
     </head><!--NOT seen on the webpage-->
     <body>
-        <h1>Hello World</h1><!--heading, you can only have one-->
+        <header>
+            <h1>Hello html World</h1><!--heading, you can only have one-->
 
-        <hr>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="#html">Learning HTML</a><!--how to auto scroll on page-->
-                </li>
-                <li>
-                    <a href="#how_to">How to learn HTML</a>
-                </li>
-            </ul>
-        </nav><!--navigation links area-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#html">Learning HTML</a><!--how to auto scroll on page-->
+                    </li>
+                    <li>
+                        <a href="#how_to">How to learn HTML</a>
+                    </li>
+                </ul>
+            </nav><!--navigation links area-->
+        </header>
 
         <hr><!--horizontal rule-->
-    <section id="html">
-        <h2>I'm ready to learn HTML</h2>
-        <p>This is my first web page.</p><!--paragraph-->
-        <img src="img/html_logo_300x300.png" alt="HTML5 logo" title="I am learning html5"
-        width="150" height="150">
-        <figure>
-            <figcaption>An example of HTML5 code</figcaption>
-            <p>
-                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code><!--how to add code sample-->
+    <main></main>    
+        <section id="html">
+            <h2>I'm ready to learn HTML</h2>
+            <p>This is my first web page.</p><!--paragraph-->
+            <img src="img/html_logo_300x300.png" alt="HTML5 logo" title="I am learning html5"
+            width="150" height="150">
+            <figure>
+                <figcaption>An example of HTML5 code</figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code><!--how to add code sample-->
+                </p>
+            </figure>
+            <h3>My daily schedule</h3>
+            <p>Let me tell you how:
+                <br>... I learn more about web dev.
+                <br>&nbsp;&nbsp;&nbsp;... I plan out my schedule.<!--nbsp; adds white space-->
+                <br>... learning from the <abbr 
+                title="Clown World">
+                    <a href="https://en.wiktionary.org/wiki/clown_world">CW</a>
+                </abbr>
+                <br><!--line break--><!--"br*150" this makes muiltple line break-->
             </p>
-        </figure>
-        <h3>My daily schedule</h3>
-        <p>Let me tell you how:
-            <br>... I learn more about web dev.
-            <br>&nbsp;&nbsp;&nbsp;... I plan out my schedule.<!--nbsp; adds white space-->
-            <br>... learning from the <abbr 
-            title="Clown World">
-                <a href="https://en.wiktionary.org/wiki/clown_world">CW</a>
-            </abbr>
-            <br><!--line break--><!--br*150 this makes muiltple line break-->
-        </p>
-        <figure>
-            <img src="img/caribbean.jpg" alt="Caribbean_Beach" title="Caribbean Beach" 
-            width="200" height="150" loading="lazy"><!--eager/defult - lazy hides img below the fold-->
-                <figcaption>Caribbean Beach Getaway</figcaption><!--adds test under img-->
-        </figure>
-    </section>
-        <hr>
-    <section id="how_to">
-        <h2>I am also planning to <em>learn more</em></h2><!--inline elements <em>-->
-        <p><strong>Never</strong> give up.</p>
-        <figure>
-            <img src="img/vacation.jpg" alt="Cancun" title="It's 5 o'Clock Somewhere" 
-            width="200" height="150" loading="lazy">
-                <figcaption>Caribbean Beach img</figcaption>
-        </figure> 
+            <figure>
+                <img src="img/caribbean.jpg" alt="Caribbean_Beach" title="Caribbean Beach" 
+                width="200" height="150" loading="lazy"><!--eager/defult - lazy hides img below the fold-->
+                    <figcaption>Caribbean Beach Getaway</figcaption><!--adds test under img-->
+            </figure>
+        </section>
+            <hr>
+        <section id="how_to">
+            <h2>I am also planning to <em>learn more</em></h2><!--inline elements <em>-->
+            <p><strong>Never</strong> give up.</p>
+            <figure>
+                <img src="img/vacation.jpg" alt="Cancun" title="It's 5 o'Clock Somewhere" 
+                width="200" height="150" loading="lazy">
+                    <figcaption>Caribbean Beach</figcaption>
+            </figure> 
 
-        <h3>My daily schedule</h3>
-        <p>Let me tell you how:</p>
-            <ol>
-                <li>eat</li>
-                <li>code</li>
-                <li>sleep</li>
-            </ol><!--ordered list-->
-            <ul>
-                <li>rest</li>
-                <li>relax</li>      
-            </ul><!--unordered list-->   
-    </section>   
-        <hr>
+            <h3>My daily schedule</h3>
+            <p>Let me tell you how:</p>
+                <ol>
+                    <li>eat</li>
+                    <li>code</li>
+                    <li>sleep</li>
+                </ol><!--ordered list-->
+                <ul>
+                    <li>rest</li>
+                    <li>relax</li>      
+                </ul><!--unordered list-->   
+        </section>
+    </main>   
+    <hr>
         
     <footer>
         &lt;&lt;&lt; &copy; <a href="about.html">z2ch</a> &gt;&gt;&gt;
@@ -84,7 +86,8 @@
             Clown World<br>
             123 no where<br>
         </address>
-        
+            <img src="img/185.jpg" alt="logo" title="z2ch logo" 
+            width="200" height="150" loading="lazy"> 
     </footer>   
     </body><!--what is see on the webpage-->
 </html>
