@@ -1,48 +1,55 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!DOCTYPE html><!--Document Type Declaration-->
+<html lang="en-US"><!--specify language-->  
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="z2ch">
-        <meta name="description" content="About your webpage">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Make your webpage work on all devices-->
-        <title>name thats shows in the tab</title>
+<head><!--NOT seen on the webpage-->
+        <meta charset="utf-8"><!--character encoding--> 
+        <meta name="author" content="z2ch"><!--author of webpage--> 
+        <meta name="description" content="About your webpage"><!--describe what the webpage is about--> 
+        <meta name="keywords" content="HTML, CSS, JavaScript"><!--keywords for search engines-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive design-->
+        <title>name thats shows in the tab</title><!--webpage tab-->
         <link rel="icon" href="img/html5icon.png" type="image/x-icon"><!--icon in webpage tab-->
-        <link rel="stylesheet" href="css.temp.css" type="text/css"><!--dark mode-->
-    </head>
+        <link rel="stylesheet" href="css.temp.css" type="text/css"><!--link to external CSS file "dark mode"-->
+</head>
 
-    <body>
-        <header>
-            <h1>Hello html World</h1><!--heading, you can only have one-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#"></a><!--how to auto scroll on page-->
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <hr>
-        <main>       
-            <figure>
-                <img src="img/" alt="" title="" 
-                width="" height="" loading="lazy">
-                    <figcaption></figcaption><!--adds test under img-->
-            </figure>
-        </main> 
-    </body>
-
-    <footer>
-        &lt;&lt;&lt; &copy; <a href="">z2ch</a> &gt;&gt;&gt;
+<body><!--visible content on the webpage-->
+    <header><!--header area-->
+        <h1>Hello html World</h1><!--heading, you can only have one-->
+        <nav aria-label="primary-navigation"><!--navigation links area-->
+            <ul><!--unordered list-->
+                <li><!--list item-->
+                    <a href="#"></a><!--how to auto scroll on page-->
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr><!--horizontal rule-->
+    <main><!--main content area-->
+        <article id=""><!--main content--></article>
+        <section><!--group content--></section>     
+        <figure><!--group media content-->
+        <img src="img/" alt="" title="" 
+        width="" height="" loading="lazy">
+            <figcaption></figcaption><!--adds test under img-->
+        </figure>
+        <aside id=""><!--sidebar content-->
+            <details><!--collapsible content-->
+                <summary>words to <mark>see what shows</mark> up</summary><!--summary title-->
+                    <p>This is some hidden content!</p>
+            </details>
+        </aside>
+    </main> 
+    <footer><!--footer area-->
+        <p>&lt;&lt;&lt; &copy; <a href="">z2ch</a> &gt;&gt;&gt;</p>
         <p><a href="#">Back to Top</a></p>
-        <address>
+        <address><!--contact info-->
+            Written by z2ch.<br>
             Clown World<br>
             123 no where<br>
         </address>
-    </footer>
-
+    </footer>    
+</body>
 </html>

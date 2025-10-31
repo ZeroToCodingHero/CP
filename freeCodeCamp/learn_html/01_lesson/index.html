@@ -13,7 +13,7 @@
         <header>
             <h1>Hello html World</h1><!--heading, you can only have one-->
 
-            <nav>
+            <nav aria-label="primary-navigation"><!--navigation links area-->
                 <ul>
                     <li>
                         <a href="#html">Learning HTML</a><!--how to auto scroll on page-->
@@ -22,65 +22,82 @@
                         <a href="#how_to">How to learn HTML</a>
                     </li>
                 </ul>
-            </nav><!--navigation links area-->
+            </nav>
         </header>
 
-        <hr><!--horizontal rule-->
-    <main></main>    
-        <section id="html">
+        <hr>
+    <main>  
+        <article id="html">
             <h2>I'm ready to learn HTML</h2>
             <p>This is my first web page.</p><!--paragraph-->
-            <img src="img/html_logo_300x300.png" alt="HTML5 logo" title="I am learning html5"
-            width="150" height="150">
-            <figure>
-                <figcaption>An example of HTML5 code</figcaption>
-                <p>
-                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code><!--how to add code sample-->
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/html_logo_300x300.png" alt="HTML5 logo" title="I am learning html5"
+                width="150" height="150">
+                <figure>
+                    <figcaption>An example of HTML5 code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code><!--how to add code sample-->
+                    </p>
+                </figure>
+            </section>
+            <section> 
+                <h3>My daily schedule</h3>
+                <p>Let me tell you how:
+                    <br>... I learn more about web dev.
+                    <br>&nbsp;&nbsp;&nbsp;... I plan out my schedule.<!--nbsp; adds white space-->
+                    <br>... learning from the <abbr 
+                    title="Clown World">
+                        <a href="https://en.wiktionary.org/wiki/clown_world">CW</a>
+                    </abbr>
+                    <br><!--line break--><!--"br*150" this makes muiltple line break-->
                 </p>
-            </figure>
-            <h3>My daily schedule</h3>
-            <p>Let me tell you how:
-                <br>... I learn more about web dev.
-                <br>&nbsp;&nbsp;&nbsp;... I plan out my schedule.<!--nbsp; adds white space-->
-                <br>... learning from the <abbr 
-                title="Clown World">
-                    <a href="https://en.wiktionary.org/wiki/clown_world">CW</a>
-                </abbr>
-                <br><!--line break--><!--"br*150" this makes muiltple line break-->
-            </p>
-            <figure>
-                <img src="img/caribbean.jpg" alt="Caribbean_Beach" title="Caribbean Beach" 
-                width="200" height="150" loading="lazy"><!--eager/defult - lazy hides img below the fold-->
-                    <figcaption>Caribbean Beach Getaway</figcaption><!--adds test under img-->
-            </figure>
-        </section>
+                <figure>
+                    <img src="img/caribbean.jpg" alt="Caribbean_Beach" title="Caribbean Beach" 
+                    width="200" height="150" loading="lazy"><!--eager/defult - lazy hides img below the fold-->
+                        <figcaption>Caribbean Beach Getaway</figcaption><!--adds test under img-->
+                </figure>
+            </section>
+        </article>
             <hr>
-        <section id="how_to">
-            <h2>I am also planning to <em>learn more</em></h2><!--inline elements <em>-->
-            <p><strong>Never</strong> give up.</p>
-            <figure>
-                <img src="img/vacation.jpg" alt="Cancun" title="It's 5 o'Clock Somewhere" 
-                width="200" height="150" loading="lazy">
-                    <figcaption>Caribbean Beach</figcaption>
-            </figure> 
+        <article id="how_to">
+            <h2>How to learn HTML</h2>
+            <p>Here is my plan to learn HTML:</p>
+            <section>
+                <h2>I am also planning to <em>learn more</em></h2><!--inline elements <em>-->
+                <p><strong>Never</strong> give up.</p>
+                <figure>
+                    <img src="img/vacation.jpg" alt="Cancun" title="It's 5 o'Clock Somewhere" 
+                    width="200" height="150" loading="lazy">
+                        <figcaption>Caribbean Beach</figcaption>
+                </figure> 
 
-            <h3>My daily schedule</h3>
-            <p>Let me tell you how:</p>
-                <ol>
-                    <li>eat</li>
-                    <li>code</li>
-                    <li>sleep</li>
-                </ol><!--ordered list-->
-                <ul>
-                    <li>rest</li>
-                    <li>relax</li>      
-                </ul><!--unordered list-->   
-        </section>
+                <h3>My daily schedule</h3>
+                <p>Let me tell you how:</p>
+                    <ol>
+                        <li>eat</li>
+                        <li>code</li>
+                        <li>sleep</li>
+                    </ol><!--ordered list-->
+                    <ul>
+                        <li>rest</li>
+                        <li>relax</li>      
+                    </ul><!--unordered list-->  
+                    <aside id="test"><!--sidebar content-->
+                        <details><!--collapsible content-->
+                            <summary>words to see what shows up</summary><!--summary title-->
+                            <p>This is some hidden content!</p>
+                        </details>
+                    </aside>
+            </section>
+            <div></div><!--generic container-->
+            <span></span><!--inline generic container-->
+        </article>
     </main>   
     <hr>
         
     <footer>
-        &lt;&lt;&lt; &copy; <a href="about.html">z2ch</a> &gt;&gt;&gt;
+        <p>&lt;&lt;&lt; &copy; <a href="about.html">z2ch</a> &gt;&gt;&gt;</p>
         <p><a href="#">Back to Top</a></p>
         <address>
             Clown World<br>
