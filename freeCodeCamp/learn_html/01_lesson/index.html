@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="z2ch">
@@ -9,6 +10,7 @@
         <link rel="stylesheet" href="main.css" type="text/css"><!--dark mode-->
 
     </head><!--NOT seen on the webpage-->
+
     <body>
         <header>
             <h1>Hello html World</h1><!--heading, you can only have one-->
@@ -29,6 +31,7 @@
         </header>
 
         <hr>
+
     <main>  
         <article id="html">
             <h2>I'm ready to learn HTML</h2>
@@ -66,7 +69,7 @@
         <article id="how_to">
             <h2>How to learn HTML</h2>
             <p>Here is my plan to learn HTML:</p>
-            <section>
+            
                 <h2>I am also planning to <em>learn more</em></h2><!--inline elements <em>-->
                 <p><strong>Never</strong> give up.</p>
                 <figure>
@@ -92,10 +95,61 @@
                             <p>This is some hidden content!</p>
                         </details>
                     </aside>
-            </section>
+                    <br>
+                    <table> 
+                        <caption>My Daily Scedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>
+                                    <time datetime="08:00">8am</time>
+                                    <time datetime="11:00">11am</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Break</th>
+                                <td>
+                                    <time datetime="11:00">11am</time>
+                                    <time datetime="12:00">12pm</time>
+                                </td>
+                                <td>Eat Lunch</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td>
+                                    <time datetime="12:00">12pm</time>
+                                    <time datetime="17:00">5pm</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All Other Times</td>
+                                <td>Free Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">And That's What I Do Eat, Code and Sleep</td>
+                            </tr>
+                        </tfoot>
+                    </table>
             <div></div><!--generic container-->
             <span></span><!--inline generic container-->
         </article>
+
     </main>   
     <hr>
         
@@ -108,6 +162,7 @@
         </address>
             <img src="img/185.jpg" alt="logo" title="z2ch logo" 
             width="200" height="150" loading="lazy"> 
-    </footer>   
+    </footer> 
+      
     </body><!--what is see on the webpage-->
 </html>
