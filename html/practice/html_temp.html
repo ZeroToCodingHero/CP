@@ -2,20 +2,18 @@
 <html lang="en-US"><!--specify language-->  
 
 <head><!--NOT seen on the webpage-->
-        <meta charset="utf-8"><!--character encoding--> <!--meta = void elements-->
+        <meta charset="utf-8"><!--character encoding--> 
         <meta name="author" content="z2ch"><!--author of webpage--> 
         <meta name="description" content="About your webpage"><!--describe what the webpage is about--> 
         <meta name="keywords" content="HTML, CSS, JavaScript"><!--keywords for search engines-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--responsive design-->
-        <meta content="site_name" property="og:title"><!--social media site name-->
-        <meta property="og:type" content="website"><!--type of content-->
         <title>name thats shows in the tab</title><!--webpage tab-->
         <link rel="icon" href="img/html5icon.png" type="image/x-icon"><!--icon in webpage tab-->
         <link rel="stylesheet" href="css.temp.css" type="text/css"><!--link to external CSS file "dark mode"-->
 </head>
 
 <body><!--visible content on the webpage-->
-    <header><!--header area--><!--used to define the header of a document or section.-->
+    <header><!--header area-->
         <h1>Hello html World</h1><!--heading, you can only have one-->
         <nav aria-labeledby="primary-navigation"><!--navigation links area-->
             <h2 id="primary-navigation">Primary Navigation</h2>
@@ -29,93 +27,29 @@
             </ul>
         </nav>
     </header>
-
     <hr><!--horizontal rule-->
-
-    <main><!--main content area--><!--used to contain the main content of the web page-->
-
-        <script src="javascript_file.js"></script><!--link to external JavaScript file-->
-
+    <main><!--main content area-->
         <article id=""><!--main content--></article>
-
-        <section><!--group content--></section><!--used to divide up content into smaller sections.-->
-
-        <iframe src="url" title="" width="" height="" loading="lazy"></iframe><!--embed another webpage-->
-
-        <video src="video/video.mp4" title="" width="" height="" controls autoplay muted loop loading="lazy"allowfullscreen>
-            Your browser does not support the video tag.
-        </video><!--embed video content-->
-
-        <audio src="audio/audio.mp3" title="" controls autoplay loop loading="lazy">
-            Your browser does not support the audio element.
-        </audio><!--embed audio content--> 
-
-        <figure><!--group media content--><!--used to contain illustrations and diagrams-->
+        <section><!--group content--></section>     
+        <figure><!--group media content-->
         <img src="img/" alt="" title="" 
-        width="" height="" loading="lazy"><!--img = void elements-->
-        <input type="image/WEBP or AVIF" src="img/" alt="" title="" 
-        width="" height="" loading="lazy"><!--input = void elements-->
-            <!--SVG = Scalable Vector Graphics-->
+        width="" height="" loading="lazy">
             <figcaption></figcaption><!--adds test under img-->
         </figure>
-
-        <a href="url" target="_blank or _parent _self _top"></a><!-- a=anchor elements href=attribute - apply links-->
-        <!--_blank = open in new tab _parent = open in parent frame _self = open in same frame _top = open in full body-->
-        
-        <!--absolute path-->
-        <a href="https://www.example.com"></a><!--goes to external website--> 
-        <a href="file:///D:/01-eo/Coding/CP-1/html/practice/html.html"></a><!--goes to specific file location-->
-        <!--relative path-->
-        <a href="folder/page.html"></a><!--goes to folder in current directory-->
-        <a href="../page.html"></a><!--goes up one directory--> 
-
-        <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p><!--lang=language attribute-->
-        <p>We tested several products, including the <b>SuperSound 3000</b> for audio quality, the <b>QuickCharge Pro</b> for fast charging, and the <b>Ecoclean Vacuum</b> for cleaning. The first two performed well, but the <b>Ecoclean Vacuum</b> did not meet expectations.</p>
-
-        <dl>
-            <dt>HTML</dt><!--definition term-->
-            <dd>HyperText Markup Language</dd><!--definition description-->
-            <dt>CSS</dt><!--definition term-->
-            <dd>Cascading Style Sheets</dd>
-            <dt>JS</dt>
-            <dd>JavaScript</dd>
-        </dl>
-
-        <p></p><!--paragraph-->
-        <strong></strong><!--bold text-->
-        <em></em><!--italicized text-->
-        <mark></mark><!--highlighted text--> 
-        <small></small><!--small text-->
-        <del></del><!--deleted/strikethrough text-->
-        <ins></ins><!--inserted/underlined text-->           
-        <sup></sup><!--superscript text-->
-        <sub></sub><!--subscript text--> 
-        <q></q><!--inline quotation-->
-        <blockquote cite="source of quote"></blockquote><!--block quotation-->   
-        <abbr title="full word"></abbr><!--abbreviation-->
-        <cite></cite><!--citation-->
-        <pre></pre><!--preformatted text-->     
-        <code></code><!--computer code text-->
-        <time datetime="2024-06-01"></time><!--date and/or time-->
-        <span></span><!--generic inline container--> 
-        <div></div><!--generic block container-->
-            <hr><!--horizontal rule-->
-
         <aside id=""><!--sidebar content-->
             <details><!--collapsible content-->
                 <summary>words to <mark>see what shows</mark> up</summary><!--summary title-->
                     <p>This is some hidden content!</p>
             </details>
         </aside>
-
         <table>
             <caption></caption>
-                <tread>
+                <thead>
                     <tr>
                         <th>Time</th>
                         <th>Activity</th>
                     </tr>
-                </tread>
+                </thead>
                 <tbody>
                     <tr>
                         <td>
@@ -151,20 +85,39 @@
                 </tfoot>
         </table>
 
+        <section>
+            <h2>Forms</h2>
+            
+        <form action="">
+            <label for="email"> Email Address: </label>
+            <input type="email" id="email" placeholder="example@email.com" />
+        </form>
+
+        <form action="">
+            <label for="email">Email Address (Required field):</label>
+            <input
+                required
+                type="email"
+                name="email"
+                id="email"
+                minlength="4"
+                maxlength="64"
+                />
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
     </main> 
-
     <footer><!--footer area-->
-        <p>&lt;&lt;&lt; &copy; <a href="">z2ch</a> &gt;&gt;&gt;</p> 
-        <p><a href="#">Back to Top</a></p><!-- a=anchor elements href=attribute - apply links-->
-
+        <p>&lt;&lt;&lt; &copy; <a href="">z2ch</a> &gt;&gt;&gt;</p>
+        <p><a href="#">Back to Top</a></p>
         <address><!--contact info-->
             Written by z2ch.<br>
             Clown World<br>
             123 no where<br>
-            <p><a href="tel:5555555555">555-555-5555</a></p><!--tel=telephone link-->
-            <p><a href="mailto:fake@email.com">fake@email.com</a></p><!--mailto=email link-->
+            <p><a href="tel:5555555555">555-555-5555</a></p>
+            <p><a href="mailto:fake@email.com">fake@email.com</a></p>
         </address>
-
     </footer>    
 </body>
 </html>
