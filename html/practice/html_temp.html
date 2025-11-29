@@ -30,18 +30,24 @@
     <hr><!--horizontal rule-->
     <main><!--main content area-->
         <article id=""><!--main content--></article>
-        <section><!--group content--></section>     
-        <figure><!--group media content-->
-        <img src="img/" alt="" title="" 
-        width="" height="" loading="lazy">
+
+        <section><!--group content--></section>
+
+        <aside id=""><!--sidebar content--></aside>
+
+        <figure><!--group media content--></figure>
+        
+            
+            <img src="img/" alt="" title="" 
+            width="" height="" loading="lazy">
+
             <figcaption></figcaption><!--adds test under img-->
-        </figure>
-        <aside id=""><!--sidebar content-->
-            <details><!--collapsible content-->
+            
+        <details><!--collapsible content-->
                 <summary>words to <mark>see what shows</mark> up</summary><!--summary title-->
                     <p>This is some hidden content!</p>
-            </details>
-        </aside>
+        </details>
+
         <table>
             <caption></caption>
                 <thead>
@@ -84,17 +90,14 @@
                     </tr>
                 </tfoot>
         </table>
-
-        <section>
-            <h2>Forms</h2>
             
         <form action="">
             <label for="email"> Email Address: </label>
             <input type="email" id="email" placeholder="example@email.com" />
         </form>
 
-        <form action="">
-            <label for="email">Email Address (Required field):</label>
+        <form action=""><!--form area-->
+            <label for="email">Email Address (Required field):</label><!--label for input-->
             <input
                 required
                 type="email"
@@ -103,9 +106,8 @@
                 minlength="4"
                 maxlength="64"
                 />
-            <button type="submit">Submit Form</button>
+            <button type="submit">Submit Form</button><!--submit button-->
         </form>
-    </section>
 
     </main> 
     <footer><!--footer area-->
