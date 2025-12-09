@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio Video Practice</title>
+</head>
+<body>
+    <header></header>
+
+    <main>
+    <h1>Audio and Video Elements in HTML5</h1>
+
+    <h2>Audio Element</h2>
+    <audio controls loop aria-label="">
+        <source src="audio/sample-audio.mp3" type="audio/mpeg">
+        <source src="audio/sample-audio.ogg" type="audio/ogg">
+        <track kind="captions" srclang="en" label="English Captions" src="audio/captions.vtt">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Element</h2>
+    <video width="640" height="360" controls loop muted preload="metadata" poster="" aria-label="">
+        <source src="video/sample-video.mp4" type="video/mp4">
+        <source src="video/sample-video.webm" type="video/webm">
+        <track kind="subtitles" srclang="en" label="English Subtitles" src="video/subtitles.vtt">
+        Your browser does not support the video element.
+    </video>
+    </main>
+
+    <footer></footer>   
+</body>
+</html>
+
