@@ -1,4 +1,3 @@
-""" 
 new-item / code = create file
 rm = remove file
 mkdir = make directory / folder
@@ -19,5 +18,3 @@ help = finding help
 hostname = network name
 exit = exiting your terminal
 dir-r = finding files
-
-"""
