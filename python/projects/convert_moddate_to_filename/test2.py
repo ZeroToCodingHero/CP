@@ -5,16 +5,17 @@ import re
 
 # ==================== CONFIGURATION ====================
 # Root directory to start from (will process this folder + all subfolders)
-directory = Path("//tank/photo/2023")
+directory = Path("//tank/photo/2023/2023-01-15")  # <-- CHANGE THIS to your target folder
 
 # Choose your preferred output format (uncomment one)
 # FORMAT = "{year}-{month}-{day}_{hour}-{minute}-{second}{ext}"          # 2023-03-15_14-49-28.jpg
 # FORMAT = "{year}{month}{day}_{hour}{minute}{second}{ext}"              # 20230315_144928.jpg
-FORMAT = "IMG_{year}-{month}-{day}_{hour}-{minute}-{second}{ext}"         # IMG_2023-03-15_14-49-28.jpg
+# FORMAT = "IMG_{year}-{month}-{day}_{hour}-{minute}-{second}{ext}"      # IMG_2023-03-15_14-49-28.jpg
 # FORMAT = "{year}-{month}-{day} {hour}h{minute}m{second}{ext}"          # 2023-03-15 14h49m28.jpg
+FORMAT = "{year}-{month}-{day}-{hour}h{minute}m{second}{ext}"            # 2023-03-15-14h49m28.jpg
 
 # Dry-run mode: True = preview only, False = actually rename
-DRY_RUN = False
+DRY_RUN = False # Change to False to perform actual renaming
 
 # Optional: Add a prefix based on subfolder name (e.g., "Vacation/IMG_...")
 # Set to True if you want the immediate subfolder name added as prefix
