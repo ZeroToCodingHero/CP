@@ -7,7 +7,7 @@ output_dir = "//tank/photo/2002" # Directory to save modified images
 os.makedirs(output_dir, exist_ok=True)
 
 # New date in EXIF format: 'YYYY:MM:DD HH:MM:SS'
-new_date = '2002:01:01 12:00:00'
+new_date = '2002:01:01 12:00:00' # Replace with desired date
 
 # Process each JPEG file
 for filename in os.listdir(input_dir):
