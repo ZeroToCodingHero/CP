@@ -4,7 +4,7 @@ import piexif
 from datetime import datetime
 
 # Directory containing the photos (change this to your folder path)
-directory = "//tank/photo/2023/2023-03-15"  # Current directory, or specify like r"C:\path\to\photos"
+directory = ""  # Current directory, or specify like r"C:\path\to\photos"
 
 # Common filename patterns that contain dates (e.g., "2025-12-31.jpg", "IMG_20251231_123456.jpg", "Photo20251231.jpg")
 # Add or modify patterns as needed for your files

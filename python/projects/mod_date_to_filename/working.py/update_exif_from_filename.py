@@ -4,7 +4,7 @@ import piexif
 from datetime import datetime
 
 # Directory containing your photos
-directory = "//tank/photo/2023" # Change to your folder path, e.g., r"C:\Users\YourName\Pictures"
+directory = "D:/test/2023/2023-01-15" # Change to your folder path, e.g., r"C:\Users\YourName\Pictures"
 
 def extract_datetime_from_filename(filename):
     """

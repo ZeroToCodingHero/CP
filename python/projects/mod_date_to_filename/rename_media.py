@@ -130,13 +130,18 @@ if __name__ == "__main__":
     print("Converts: 2025-12-31-14h30m00s.jpg → 2025-12-31_14-30-00.jpg\n")
 
     if args.execute:
-        print("WARNING: This will permanently rename files!\n")
-        confirm = input("Type 'YES' to proceed with actual renaming: ")
-        if confirm != "YES":
-            print("Cancelled. (Dry-run is safe by default.)")
+        print("WARNING: This will permanently rename your files!\n")
+        response = input("Do you want to proceed with renaming? (y/n): ").strip().lower()
+        if response not in ["y", "yes"]:
+            print("Operation cancelled. No files were changed.")
             sys.exit(0)
+        print()  # Extra line for clarity
         batch_rename_media(folder, execute=True)
     else:
-        print("DRY-RUN MODE: Showing what would be renamed (safe)\n")
+        print("DRY-RUN MODE: Showing what would happen (no changes made)\n")
         batch_rename_media(folder, execute=False)
-        print("\nTo actually rename files, run again with --execute")
+        print("\nTo actually rename the files, run again with --execute")
+
+# End of script
+
+# python rename_media.py "D:/test/2023/2023-01-15" --execute         # to perform actual renaming

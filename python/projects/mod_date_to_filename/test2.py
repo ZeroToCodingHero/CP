@@ -5,7 +5,7 @@ import re
 
 # ==================== CONFIGURATION ====================
 # Root directory to start from (will process this folder + all subfolders)
-directory = Path("//tank/photo/2023/2023-01-15")  # <-- CHANGE THIS to your target folder
+directory = Path("")  # <-- CHANGE THIS to your target folder
 
 # Choose your preferred output format (uncomment one)
 # FORMAT = "{year}-{month}-{day}_{hour}-{minute}-{second}{ext}"          # 2023-03-15_14-49-28.jpg

@@ -5,7 +5,7 @@ from datetime import datetime
 
 # ----------------------------- CONFIGURATION -----------------------------
 # Directory to process
-directory = "//tank/photo/2023/2023-01-15"  # Change to your folder, e.g., r"C:\Users\You\Videos"
+directory = ""  # Change to your folder, e.g., r"C:\Users\You\Videos"
 
 # Process subfolders recursively?
 recursive = False
