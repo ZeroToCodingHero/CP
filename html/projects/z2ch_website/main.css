@@ -20,6 +20,12 @@ a:hover, a:active {
     color: #eee;
 }
 
+a:link {
+    color: whitesmoke;
+    text-decoration: underline;
+
+}
+
 table, tr, th, td, caption {
     border:1px solid #eee;
     font-family: 'courier New', courier, monospace;
