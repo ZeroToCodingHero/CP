@@ -1,0 +1,112 @@
+/* There are 5 types of CSS selectors */
+
+/* 1. Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 2. Type Selector */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* 3. Class Selector */
+.container {
+    width: 80%;
+    margin: auto;
+}
+/* 4. ID Selector */
+#header {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+/* 5. Attribute Selector */
+input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+/* Additional Examples */
+/* Descendant Selector */
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+/* Child Selector */
+.main > .content {
+    padding: 20px;
+    background-color: #eaeaea;
+}   
+/* Pseudo-class Selector */
+a:hover {
+    color: red;
+}
+/* Pseudo-element Selector */
+p::first-letter {
+    font-size: 200%;
+    color: blue;
+}       
+/* Grouping Selector */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+/* Adjacent Sibling Selector */
+h2 + p {
+    margin-top: 10px;
+}
+/* General Sibling Selector */
+h2 ~ p {
+    color: gray;
+}
+/* Negation Selector */
+input:not([type="submit"]) {
+    background-color: #f9f9f9;
+}   
+
+/* Combinator Selector */
+div > p + a {
+    text-decoration: underline;
+}   
+/* Pseudo-class with Function */
+li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+/* Attribute Selector with Substring Matching */
+a[href^="https"] {
+    font-weight: bold;
+}
+/* Grouping Multiple Selectors */
+header, footer, section {
+    padding: 15px;
+    background-color: #ddd;
+}
+/* Universal Selector with Specificity */
+* {
+    font-family: 'Verdana', sans-serif;
+}
+/* Type Selector with Class */
+button.primary {
+    background-color: blue;
+    color: white;
+}
+/* ID Selector with Pseudo-class */
+#submitBtn:hover {
+    background-color: darkblue;
+}
+/* Attribute Selector with Value */
+input[value="search"] {
+    border-radius: 5px;
+}
+/* Descendant Selector with Class */
+.article .title {
+    font-weight: bold;
+}
+/* Child Selector with ID */
+#mainContent > .highlight { 
+    background-color: yellow;
+}
+/* Pseudo-element with Class */                     
+p.intro::first-line {
+    font-style: italic;
+}
