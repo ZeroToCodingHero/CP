@@ -1,0 +1,11 @@
+/* For the first image (proportioned kitten) */
+.avatar.proportioned {
+  width: 300px;
+  height: auto;        /* keeps the original proportions */
+}
+
+/* For the second image (distorted one) */
+.avatar.distorted {
+  width: 200px;
+  height: 400px;       /* twice the width → distorted */
+}
