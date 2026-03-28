@@ -1,0 +1,59 @@
+html{
+    font-size: 22px
+}
+
+body{
+    background-color: #333;
+    color: whitesmoke;
+}
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: lightgray
+}
+
+a:hover, a:active {
+    color: #eee;
+}
+
+table, tr, th, td, caption {
+    border:1px solid #eee;
+    font-family: 'courier New', courier, monospace;
+    border-collapse: collapse;
+    padding: o.5rem;
+}
+
+div {
+    color: blue;
+}
+
+.alert-text {
+    color: red;
+}
+
+#title {
+    background-color: red;
+    color: whitesmoke;
+}
+
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.subsection.header {
+    color: red;
+}
+
+.subsection#preview {
+    color: yellowgreen;
+}
+
+/* descendant combinator = It allows you to select an element based on its relationship with its ancestor (parent, grandparent, and so on*/
+.ancestor .contents {
+    color: blue;
+}

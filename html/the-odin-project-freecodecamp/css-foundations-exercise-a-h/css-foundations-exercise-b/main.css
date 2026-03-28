@@ -1,0 +1,27 @@
+.first {
+  background-color: yellow;
+  font-size: 24px;
+}
+
+#second {
+  color: blue;
+  font-size: 36px;
+}
+
+.third {
+  background-color: yellow;
+  font-size: 24px;
+}
+#forthid {
+  background-color: red;
+  font-weight: bold;
+}
+
+.forth {
+  font-size: 24px;
+}
+
+.fifth {
+  background-color: yellow;
+  font-size: 24px;
+}
