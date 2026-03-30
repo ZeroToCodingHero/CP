@@ -1,0 +1,13 @@
+* {
+  border: 1px solid red;
+} 
+/* 
+This is a universal selector that applies a red border to all elements on the page. It is often used for debugging purposes to visualize the layout and spacing of elements. 
+
+order of box-model properties
+Content, Padding, Border, Margin
+
+Learn CSS Box Model In 8 Minutes
+https://www.youtube.com/watch?v=rIO5326FgPE&t=2s
+
+*/

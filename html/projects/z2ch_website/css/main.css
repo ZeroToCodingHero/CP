@@ -34,3 +34,8 @@ table, tr, th, td, caption {
 }
 /* End Dark Mode */
 /* Z2CH Website Styles */
+
+* {
+  border: 1px solid red;
+  
+} 
