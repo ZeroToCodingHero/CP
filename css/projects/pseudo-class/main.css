@@ -26,3 +26,13 @@ table, tr, th, td, caption {
     padding: o.5rem;
 }
 /* dark mode css */
+
+button:active {
+  background: greenyellow;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  background: crimson;
+}
