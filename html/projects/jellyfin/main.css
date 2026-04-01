@@ -1,0 +1,85 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid red; /* Debugging: visualize element boundaries */
+}
+
+html{
+    font-size: 16px
+}
+
+body{
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+}
+
+.jellyfin-logo {
+    margin: 2em auto;
+
+}
+
+/* Links */
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightgray
+}
+
+a:hover, 
+a:active {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.round-btn {
+    font-size: 1.2em;
+    padding: 1.00rem 1.75rem;
+    background-color: rgb(89, 149, 240);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;   
+}
+
+.round-btn:hover,
+.round-btn:focus {
+    background-color: whitesmoke;
+    color: #1a1a1a;
+    transform: scale(1.05);
+}
+
+.round-btn:focus {
+    outline: 3px solid rgba(255,255,255,0.6);
+    outline-offset: 4px;
+}
+
+/* Footer */
+footer address {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    font-style: normal;
+    font-size: 0.8em;
+    color: aliceblue;
+    margin: 0;
+    padding: 0.75rem 1rem;
+}
+
+/* Optional: Make it more modern */
+:root {
+    --primary: rgb(89, 149, 240);
+    --primary-hover: whitesmoke;
+}
