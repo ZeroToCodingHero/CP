@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice Playground</title>
+    <style>
+        /* ★★★ CSS PRACTICE AREA ★★★*/
+        * {
+            border: 1px solid green;
+        } 
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: grey;
+        }
+        nav ul li {
+            border: 3px solid red;
+            margin-top: 25px;
+        }
+        nav ul li:last-child  {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">PracticeSite</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="cta-button">Sign Up</button>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Welcome to CSS Practice</h1>
+        <p class="hero-subtitle">Style everything below however you want. Go wild!</p>
+        <div class="hero-buttons">
+            <button class="primary-btn">Start Styling</button>
+            <button class="secondary-btn">Learn More</button>
+        </div>
+    </section>
+
+    <!-- FEATURES / CARDS -->
+    <section class="features">
+        <h2>Practice Elements</h2>
+        <div class="cards-container">
+            
+            <div class="card">
+                <div class="card-image">🖼️</div>
+                <h3>Flexbox & Grid</h3>
+                <p>Try different layouts with these cards.</p>
+                <button class="card-btn">Flex Practice</button>
+            </div>
+
+            <div class="card">
+                <div class="card-image">🎨</div>
+                <h3>Colors & Effects</h3>
+                <p>Hover effects, shadows, transitions, etc.</p>
+                <button class="card-btn">Style Me</button>
+            </div>
+
+            <div class="card">
+                <div class="card-image">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Make this page look great on mobile.</p>
+                <button class="card-btn">Mobile First</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="form-section">
+        <h2>Form Styling Practice</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="you@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="level">Skill Level</label>
+                <select id="level">
+                    <option value="">Choose one...</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms">
+                <label for="terms">I want to practice CSS every day</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Styles</button>
+        </form>
+    </section>
+
+    <!-- TABLE -->
+    <section class="table-section">
+        <h2>Table Styling</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Purpose</th>
+                    <th>Difficulty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flexbox</td>
+                    <td>1D layouts</td>
+                    <td>★★☆</td>
+                </tr>
+                <tr>
+                    <td>CSS Grid</td>
+                    <td>2D layouts</td>
+                    <td>★★★</td>
+                </tr>
+                <tr>
+                    <td>Animations</td>
+                    <td>Fun effects</td>
+                    <td>★★★</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- MISC ELEMENTS -->
+    <section class="misc">
+        <h2>More Elements to Style</h2>
+        <div class="misc-container">
+            <div class="tag">HTML5</div>
+            <div class="tag">CSS3</div>
+            <div class="tag">Flexbox</div>
+            <div class="tag">Grid</div>
+            <div class="tag">Responsive</div>
+        </div>
+
+        <blockquote>
+            "The best way to learn CSS is to break things and make them pretty again."
+            <cite>— Every developer ever</cite>
+        </blockquote>
+
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 65%"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made for CSS practice • Feel free to delete everything in the &lt;style&gt; tag and start fresh!</p>
+        <p>Pro tip: Use Chrome DevTools (F12) → Elements tab to test styles live.</p>
+    </footer>
+
+    <script>
+        // Optional: Simple interaction
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.style.transform = 'scale(0.95)';
+                setTimeout(() => card.style.transform = 'scale(1)', 200);
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!-- https://grok.com/c/cecdaa06-612a-49a8-91fb-8cbc9e704f97?rid=610815eb-99a8-43f0-b89e-be7f343782ba -->

@@ -76,7 +76,7 @@ a:active {
 .round-btn {
     font-size: 1.2em;
     padding: 1.00rem 1.75rem;
-    background-color: rgb(89, 149, 240);
+    background-image: linear-gradient(to right, #fc63dd, #37abf8);
     color: white;
     border: none;
     border-radius: 50px;

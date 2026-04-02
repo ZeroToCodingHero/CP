@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS inline-block Practice Arena</title>
+    <style>
+        /* === YOUR PRACTICE AREA ===
+        
+        Try these common experiments:
+        
+        .box {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background: #3498db;
+        }
+        
+        .nav-link { display: inline-block; padding: 10px 20px; }
+        
+        Common things to test:
+        - Removing whitespace between elements (the gap problem)
+        - vertical-align (top, middle, bottom, baseline)
+        - Different widths & heights
+        - Mixing with text
+        - Adding margins, borders, padding
+        - Comparing with display: inline vs block vs flex
+        */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: grey;
+        }
+        h1 {
+            text-align: center;
+        }
+        .nav-demo {
+            display: inline-block;
+            background: #2ecc71;
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>inline-block Practice Playground</h1>
+
+    <!-- Navigation Example -->
+    <nav class="nav-demo">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Services</a>
+        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">Blog</a>
+    </nav>
+
+    <hr>
+
+    <!-- Boxes / Cards Row -->
+    <h2>Boxes using inline-block</h2>
+    <div class="boxes-container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </div>
+
+    <hr>
+
+    <!-- Image Gallery Example -->
+    <h2>Image Gallery with inline-block</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://picsum.photos/200/200?random=1" alt="Image 1">
+            <p>Photo 1</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/200/200?random=2" alt="Image 2">
+            <p>Photo 2</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/200/200?random=3" alt="Image 3">
+            <p>Photo 3</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/200/200?random=4" alt="Image 4">
+            <p>Photo 4</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Buttons -->
+    <h2>Buttons Row</h2>
+    <div class="buttons">
+        <button class="btn">Primary</button>
+        <button class="btn">Secondary</button>
+        <button class="btn">Success</button>
+        <button class="btn">Danger</button>
+    </div>
+
+    <hr>
+
+    <!-- Mixed Content -->
+    <h2>Mixed inline + inline-block</h2>
+    <p>
+        This is normal text. 
+        <span class="highlight">This span is inline-block</span> 
+        and continues the sentence. You can control its size!
+    </p>
+
+    <!-- Comparison Section -->
+    <h2>Display Comparison</h2>
+    <div class="comparison">
+        <h3>display: inline</h3>
+        <div class="demo-inline">Inline 1</div>
+        <div class="demo-inline">Inline 2</div>
+        
+        <h3>display: inline-block</h3>
+        <div class="demo-inline-block">Inline-Block 1</div>
+        <div class="demo-inline-block">Inline-Block 2</div>
+        
+        <h3>display: block</h3>
+        <div class="demo-block">Block 1</div>
+        <div class="demo-block">Block 2</div>
+    </div>
+
+    <footer>
+        <p>Edit the <code>&lt;style&gt;</code> section and experiment freely!</p>
+    </footer>
+
+</body>
+</html>
+
+<!--https://grok.com/c/f6b84fea-0425-4773-990e-4a9bd3195202?rid=6d853720-b887-4b73-8b72-f1e46589102e-->

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice Arena</title>
+    <style>
+        /* 
+            === YOUR PRACTICE AREA ===
+            Write your CSS rules here!
+            
+            Examples to try:
+            - h1, p, div { ... }
+            - .card, .highlight { ... }
+            - #header, #special { ... }
+            - a[href*="google"] { ... }
+            - li:nth-child(odd) { ... }
+            - .container > p { ... }
+            - .siblings ~ .sibling { ... }
+            - :hover, :focus, :first-child, etc.
+        */
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <h1>CSS Selectors Practice</h1>
+        <p id="subtitle" class="intro">Play with different selectors below</p>
+    </header>
+
+    <nav>
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="https://google.com" target="_blank">Google</a>
+        <a href="#" data-type="external">External Link</a>
+    </nav>
+
+    <main class="container">
+        
+        <!-- Cards for class + descendant selectors -->
+        <div class="card">
+            <h2 class="card-title">Card 1</h2>
+            <p class="card-text">This is a sample card. Try targeting <code>.card</code> and <code>.card p</code>.</p>
+            <button class="btn">Click me</button>
+        </div>
+
+        <div class="card highlight">
+            <h2 class="card-title">Card 2 (highlighted)</h2>
+            <p class="card-text">This card has an extra <code>highlight</code> class.</p>
+            <button class="btn">Another button</button>
+        </div>
+
+        <!-- List for child, nth-child, sibling selectors -->
+        <section>
+            <h2>Shopping List</h2>
+            <ul id="shopping-list">
+                <li>Apples</li>
+                <li class="important">Milk</li>
+                <li>Bread</li>
+                <li class="important">Eggs</li>
+                <li>Cheese</li>
+            </ul>
+        </section>
+
+        <!-- Form for attribute and pseudo-class practice -->
+        <section>
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+
+        <!-- Sibling and adjacent sibling examples -->
+        <div class="siblings-demo">
+            <p class="sibling">First paragraph</p>
+            <p class="sibling">Second paragraph</p>
+            <p class="sibling special">Third paragraph (special)</p>
+            <p class="sibling">Fourth paragraph</p>
+        </div>
+
+        <!-- Table for more complex selectors -->
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>28</td>
+                    <td>Toronto</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>34</td>
+                    <td>Vancouver</td>
+                </tr>
+                <tr>
+                    <td>Charlie</td>
+                    <td>22</td>
+                    <td>Montreal</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Inline elements and pseudo elements practice -->
+        <p class="text-demo">
+            This is a paragraph with some <strong>bold text</strong>, 
+            <em>italic text</em>, and a 
+            <a href="#" class="inline-link">link inside</a>.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>Footer content • Practice as much as you want!</p>
+    </footer>
+
+</body>
+</html>
+
+<!--https://grok.com/c/f6b84fea-0425-4773-990e-4a9bd3195202?rid=6d853720-b887-4b73-8b72-f1e46589102e-->
