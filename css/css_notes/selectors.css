@@ -1,112 +1,95 @@
 /* There are 5 types of CSS selectors */
 
 /* 1. Universal Selector */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { 
+    color:grey   
 }
 /* 2. Type Selector */
 p {
-    font-size: 16px;
-    line-height: 1.5;
+    color:grey 
 }
 /* 3. Class Selector */
 .container {
-    width: 80%;
-    margin: auto;
+    color:grey 
 }
 /* 4. ID Selector */
 #header {
-    background-color: #f4f4f4;
-    padding: 20px;
+    color:grey 
 }
 /* 5. Attribute Selector */
 input[type="text"] {
-    border: 1px solid #ccc;
-    padding: 10px;
+    color:grey 
 }
 /* Additional Examples */
 /* Descendant Selector */
 nav ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 15px;
+    color:grey     
 }
 /* Child Selector */
 .main > .content {
-    padding: 20px;
-    background-color: #eaeaea;
+    color:grey
 }   
 /* Pseudo-class Selector */
 a:hover {
-    color: red;
+    color: grey;
 }
 /* Pseudo-element Selector */
 p::first-letter {
-    font-size: 200%;
-    color: blue;
+    color:grey
 }       
 /* Grouping Selector */
 h1, h2, h3 {
-    font-family: 'Arial', sans-serif;
+    color:grey
 }
 /* Adjacent Sibling Selector */
 h2 + p {
-    margin-top: 10px;
+    color:grey
 }
 /* General Sibling Selector */
 h2 ~ p {
-    color: gray;
+    color:grey
 }
 /* Negation Selector */
 input:not([type="submit"]) {
-    background-color: #f9f9f9;
+    color:grey
 }   
-
 /* Combinator Selector */
 div > p + a {
-    text-decoration: underline;
+    color:grey
 }   
 /* Pseudo-class with Function */
 li:nth-child(odd) {
-    background-color: #f0f0f0;
+    color:grey
 }
 /* Attribute Selector with Substring Matching */
 a[href^="https"] {
-    font-weight: bold;
+    color:grey
 }
 /* Grouping Multiple Selectors */
 header, footer, section {
-    padding: 15px;
-    background-color: #ddd;
-}
-/* Universal Selector with Specificity */
-* {
-    font-family: 'Verdana', sans-serif;
+    color:grey
 }
 /* Type Selector with Class */
 button.primary {
-    background-color: blue;
-    color: white;
+    color:grey
 }
 /* ID Selector with Pseudo-class */
 #submitBtn:hover {
-    background-color: darkblue;
+    color:grey
 }
 /* Attribute Selector with Value */
 input[value="search"] {
-    border-radius: 5px;
+    color:grey
 }
 /* Descendant Selector with Class */
 .article .title {
-    font-weight: bold;
+    color:grey
 }
 /* Child Selector with ID */
 #mainContent > .highlight { 
-    background-color: yellow;
+    color:grey
 }
 /* Pseudo-element with Class */                     
 p.intro::first-line {
-    font-style: italic;
+    color:grey
 }

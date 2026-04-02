@@ -3,43 +3,75 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red; /* Debugging: visualize element boundaries */
+    /* border: 1px solid red; /* Debugging: visualize element boundaries */
 }
-
-html{
-    font-size: 16px
+*, *::before, *::after {
+    box-sizing: border-box; /* Ensure all elements use border-box for consistent sizing */
 }
-
+html {
+    font-size: 16px;                  /* Base for rem units */
+    height: 100%;                     /* Required for sticky footer */
+    scroll-behavior: smooth;          /* Smooth scroll to anchors */
+    text-size-adjust: none;           /* Prevent unwanted zoom on mobile */   
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #ff9800;
+}
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     background-color: #333;
     color: whitesmoke;
     text-align: center;
-    min-height: 100vh;
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: system-ui, sans-serif;
     line-height: 1.6;
+   
 }
-
+main {
+    flex: 1;                         /* This pushes the footer down */
+}
 .jellyfin-logo {
     margin: 2em auto;
 
 }
-
 /* Links */
 a {
     color: aliceblue;
     text-decoration: none;
 }
-
 a:visited {
     color: lightgray
 }
-
 a:hover, 
 a:active {
     color: yellow;
     text-decoration: underline;
 }
-
 /* Buttons */
 .round-btn {
     font-size: 1.2em;
@@ -51,19 +83,16 @@ a:active {
     cursor: pointer;
     transition: all 0.3s ease;   
 }
-
 .round-btn:hover,
 .round-btn:focus {
     background-color: whitesmoke;
     color: #1a1a1a;
     transform: scale(1.05);
 }
-
 .round-btn:focus {
     outline: 3px solid rgba(255,255,255,0.6);
     outline-offset: 4px;
 }
-
 /* Footer */
 footer address {
     display: flex;
@@ -77,7 +106,6 @@ footer address {
     margin: 0;
     padding: 0.75rem 1rem;
 }
-
 /* Optional: Make it more modern */
 :root {
     --primary: rgb(89, 149, 240);
