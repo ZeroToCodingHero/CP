@@ -1,4 +1,36 @@
-/* There are 5 types of CSS selectors */
+/* There are 5 types of CSS selectors
+1. Universal Selector (*)
+2. Type/Element Selector (e.g., p, h1)
+3. Class Selector (e.g., .container)
+4. ID Selector (e.g., #header)
+5. Attribute Selector (e.g., input[type="text"])
+
+in order of specificity:
+1. Inline styles (style="color: red;")  - 1-0-0-0 (1000) specificity  
+2. ID Selector (#header)                - 0-1-0-0 (100) specificity
+3. Class Selector (.container)          - 0-0-1-0 (10) specificity
+4. Element/Type Selector (p, h1)        - 0-0-0-1 (1) specificity
+5. Universal Selector (*)               - 0-0-0-0 (0) specificity
+
+Additional Selectors:
+- Grouping Selector (e.g., h1, h2, h3)
+- Descendant Selector (e.g., nav ul li)
+- Child Selector (e.g., .main > .content)
+- Pseudo-class Selector (e.g., a:hover)
+- Pseudo-element Selector (e.g., p::first-letter)
+- Pseudo-class with Function (e.g., li:nth-child(odd))
+- Pseudo-element with Class (e.g., p.intro::first-line)
+- Adjacent Sibling Selector (e.g., h2 + p)
+- General Sibling Selector (e.g., h2 ~ p)
+- Combinator Selector (e.g., div > p + a)
+- Grouping Multiple Selectors (e.g., header, footer, section)
+- Type Selector with Class (e.g., button.primary)
+- ID Selector with Pseudo-class (e.g., #submitBtn:hover)
+- Descendant Selector with Class (e.g., .article .title)
+- Attribute Selector with Value (e.g., input[value="search"])
+- Negation Selector (e.g., input:not([type="submit"]))
+- Attribute Selector with Substring Matching (e.g., a[href^="https"])
+*/
 
 /* 1. Universal Selector */
 * { 
