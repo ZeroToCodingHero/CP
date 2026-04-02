@@ -20,7 +20,13 @@ p {
 input[type="text"] {
     color:grey 
 }
+
 /* Additional Examples */
+
+/* Grouping Selector */
+h1, h2, h3 {
+    color:grey
+}
 /* Descendant Selector */
 nav ul li {
     color:grey     
@@ -28,7 +34,11 @@ nav ul li {
 /* Child Selector */
 .main > .content {
     color:grey
-}   
+} 
+ /* Child Selector with ID */
+#mainContent > .highlight { 
+    color:grey
+} 
 /* Pseudo-class Selector */
 a:hover {
     color: grey;
@@ -36,33 +46,25 @@ a:hover {
 /* Pseudo-element Selector */
 p::first-letter {
     color:grey
-}       
-/* Grouping Selector */
-h1, h2, h3 {
+}  
+  /* Pseudo-class with Function */
+li:nth-child(odd) {
+    color:grey
+}   
+/* Pseudo-element with Class */                     
+p.intro::first-line {
     color:grey
 }
-/* Adjacent Sibling Selector */
+/* Adjacent Sibling Selector */ /* (+) selects the element that is immediately following the first element, and both elements share the same parent. */
 h2 + p {
     color:grey
 }
-/* General Sibling Selector */
+/* General Sibling Selector */ /* (~) selects all siblings of the first element that match the second element. */
 h2 ~ p {
     color:grey
 }
-/* Negation Selector */
-input:not([type="submit"]) {
-    color:grey
-}   
 /* Combinator Selector */
 div > p + a {
-    color:grey
-}   
-/* Pseudo-class with Function */
-li:nth-child(odd) {
-    color:grey
-}
-/* Attribute Selector with Substring Matching */
-a[href^="https"] {
     color:grey
 }
 /* Grouping Multiple Selectors */
@@ -77,19 +79,19 @@ button.primary {
 #submitBtn:hover {
     color:grey
 }
-/* Attribute Selector with Value */
-input[value="search"] {
-    color:grey
-}
 /* Descendant Selector with Class */
 .article .title {
     color:grey
 }
-/* Child Selector with ID */
-#mainContent > .highlight { 
+/* Attribute Selector with Value */
+input[value="search"] {
     color:grey
 }
-/* Pseudo-element with Class */                     
-p.intro::first-line {
+/* Negation Selector */
+input:not([type="submit"]) {
+    color:grey
+}
+/* Attribute Selector with Substring Matching */
+a[href^="https"] {
     color:grey
 }
