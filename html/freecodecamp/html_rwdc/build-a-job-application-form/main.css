@@ -1,28 +1,31 @@
-html{
-    font-size: 22px
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+}
+input:focus, 
+textarea:focus {
+  border: green;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border: red;
+}
+input:valid,
+select:valid,
+textarea:valid {
+  border: green;
+}
+button:hover {
+  background: teal;
 }
 
-body{
-    background-color: #333;
-    color: whitesmoke;
+.radio-group input[type="radio"]:checked {
+  background-color: red;
+  border: green;
+  box-shadow: 0 0 0 1px #392;             
 }
 
-a {
-    color: aliceblue;
+.radio-option:has(input[type="radio"]:checked){
+  color: red;
 }
-
-a:visited {
-    color: lightgray
-}
-
-a:hover, a:active {
-    color: #eee;
-}
-
-table, tr, th, td, caption {
-    border:1px solid #eee;
-    font-family: 'courier New', courier, monospace;
-    border-collapse: collapse;
-    padding: o.5rem;
-}
-/* dark mode css */
