@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZeroToCodingHero | My Coding Journey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: system-ui, sans-serif; }
+    .timeline-dot { transition: all 0.3s; }
+    .dark .timeline-dot { box-shadow: 0 0 0 8px rgba(99, 102, 241, 0.3); }
+  </style>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">Z</div>
+        <span class="font-semibold text-xl">ZeroToCodingHero</span>
+      </div>
+      
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#journey" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Journey</a>
+        <a href="#skills" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Contact</a>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" 
+              class="p-2 rounded-xl bg-zinc-200 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition">
+        <i id="theme-icon" class="fa-solid fa-moon text-xl"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-zinc-100 to-white dark:from-zinc-900 dark:to-zinc-950">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h1 class="text-6xl md:text-7xl font-bold mb-6">
+        From <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-cyan-500">Zero</span> to Coding Hero
+      </h1>
+      <p class="text-2xl text-zinc-600 dark:text-zinc-400 mb-8">Hi, I'm <span class="font-semibold">ZeroToCodingHero</span> — documenting my journey into software development.</p>
+      <div class="flex gap-4 justify-center">
+        <a href="#journey" 
+           class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-medium transition">See My Journey</a>
+        <a href="#projects" 
+           class="px-8 py-4 border border-zinc-400 dark:border-zinc-600 hover:border-indigo-500 rounded-2xl font-medium transition">View Projects</a>
+      </div>
+      <p class="mt-12 text-sm text-zinc-500 dark:text-zinc-400">Toronto, Canada • Self-taught Developer</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-20 bg-white dark:bg-zinc-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-8 text-center">My Story</h2>
+      <p class="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed text-center max-w-2xl mx-auto">
+        It all started in 2025 when I decided to turn my curiosity into code. 
+        No CS degree, just late-night tutorials, broken projects, and endless debugging. 
+        This website is both my portfolio and my public learning log.
+      </p>
+    </div>
+  </section>
+
+  <!-- Coding Journey Timeline -->
+  <section id="journey" class="py-20 bg-zinc-100 dark:bg-zinc-950">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-12 text-center">My Coding Journey</h2>
+      
+      <div class="relative border-l-4 border-indigo-500 dark:border-indigo-400 pl-8 space-y-12">
+        <!-- Timeline Item -->
+        <div class="relative">
+          <div class="timeline-dot absolute -left-[11px] w-6 h-6 bg-white dark:bg-zinc-900 border-4 border-indigo-500 rounded-full"></div>
+          <div class="bg-white dark:bg-zinc-900 p-6 rounded-3xl shadow-sm">
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">March 2025</span>
+              <span class="text-sm text-zinc-500">Day 1</span>
+            </div>
+            <h3 class="text-xl font-medium">Hello World</h3>
+            <p class="text-zinc-600 dark:text-zinc-400">Wrote my first HTML page and felt the magic.</p>
+          </div>
+        </div>
+
+        <!-- Add more items like this -->
+        <div class="relative">
+          <div class="timeline-dot absolute -left-[11px] w-6 h-6 bg-white dark:bg-zinc-900 border-4 border-indigo-500 rounded-full"></div>
+          <div class="bg-white dark:bg-zinc-900 p-6 rounded-3xl shadow-sm">
+            <div class="flex justify-between mb-2">
+              <span class="font-semibold">June 2025</span>
+              <span class="text-sm text-zinc-500">Milestone</span>
+            </div>
+            <h3 class="text-xl font-medium">First Mini Project</h3>
+            <p class="text-zinc-600 dark:text-zinc-400">Built a Todo App with JavaScript. Learned DOM manipulation the hard way!</p>
+          </div>
+        </div>
+
+        <!-- Keep adding your real milestones -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-white dark:bg-zinc-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-12 text-center">Skills & Tools</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Add your skills as cards: HTML, CSS, JS, Tailwind, React, Python, Git, etc. -->
+        <div class="bg-zinc-100 dark:bg-zinc-800 p-6 rounded-3xl text-center">
+          <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"></i>
+          <p class="font-medium">HTML & CSS</p>
+        </div>
+        <!-- Repeat for others -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects (add more cards) -->
+  <section id="projects" class="py-20 bg-zinc-100 dark:bg-zinc-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white dark:bg-zinc-900 rounded-3xl overflow-hidden shadow-sm">
+          <div class="h-48 bg-zinc-200 dark:bg-zinc-700"></div> <!-- Replace with real image -->
+          <div class="p-6">
+            <h3 class="font-semibold mb-2">Todo App</h3>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-4">Vanilla JS + localStorage</p>
+            <div class="flex gap-3">
+              <a href="#" class="text-indigo-600 hover:underline">Live Demo →</a>
+              <a href="#" class="text-indigo-600 hover:underline">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add 2-4 more project cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white dark:bg-zinc-900">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
+      <p class="mb-8">Building in public — feel free to reach out or follow my progress.</p>
+      <div class="flex justify-center gap-6 text-3xl">
+        <a href="https://x.com/02CodingHero" target="_blank" class="hover:text-indigo-600"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://github.com/yourusername" target="_blank" class="hover:text-indigo-600"><i class="fa-brands fa-github"></i></a>
+        <!-- Add LinkedIn, etc. -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-sm text-zinc-500 dark:text-zinc-400">
+    Made with ❤️ and lots of coffee • © 2026 ZeroToCodingHero
+  </footer>
+
+  <script>
+    // Dark Mode Toggle with persistence
+    const toggleBtn = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-icon');
+    
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        document.documentElement.classList.remove('dark');
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    // Check saved preference or system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      setTheme(isDark ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
