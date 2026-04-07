@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Contact Form</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    
+    <div class="form-container">
+        <form>
+
+            <h2>Contact Us</h2>
+
+            <fieldset>
+                <label for="name">Name: <input type="text" id="name" name="name" required></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">E-Mail: <input type="email" id="email" name="email" required></label>        
+            </fieldset>
+
+            <label for="message">Message:
+            <textarea type="text" id="message" name="message" rows="3" cols="30" required></textarea>
+            </label>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </div>
+
 </body>
+
 </html>
