@@ -1,0 +1,79 @@
+body {
+  background-color: #f9fafb;
+  color: #222;
+  padding: 2rem;
+}
+
+.accessible-form {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #666;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #111;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder {
+  color: #555;
+  opacity: 1;
+}
+
+input:focus {
+  border-color: #1e90ff;      
+  box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.4); 
+  outline: none;              
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #187bcd;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #555;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #111;
+  resize: both; 
+  box-sizing: border-box; 
+}
+
+textarea::placeholder {
+  color: #555;
+  opacity: 1;
+}
+
+textarea:focus {
+  outline: 3px solid #1e90ff;
+  border-color: #1e90ff;
+}
