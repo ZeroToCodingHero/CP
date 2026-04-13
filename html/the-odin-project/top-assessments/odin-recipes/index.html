@@ -7,19 +7,52 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Odin Recipes</h1>
+    <header>
+        <h1>Odin Recipes</h1>
+        <p>Here are some delicious homemade sauces you can make at home. Click on the links below to view the recipes.</p>
+    </header>
 
-    <p>Here are some recipes that you can make at home. Click on the links below to view the recipes.</p>
-    <ul>
-        <img src="./img/homemade-big-mac-sauce.jpg" alt="Big Mac Sauce" class="recipe-image" width="300" height="200">
-        <li><a href="./diy-big-mac-sauce/index.html">Diy Big Mac Sauce</a></li>
-        <img src="./img/homemade-mayonnaise.jpg" alt="Mayonnaise" class="recipe-image" width="300" height="200">
-        <li><a href="./diy-mayonnaise/index.html">Diy Mayonnaise</a></li>
-        <img src="./img/homemade-ketchup.jpg" alt="Ketchup" class="recipe-image" width="300" height="200">
-        <li><a href="./diy-ketchup/index.html">Diy Ketchup</a></li>
-    </ul>
+    <main>
+        <section class="recipes">
+            <ul class="recipe-list">
+                <li class="recipe-item">
+                    <a href="./diy-big-mac-sauce/index.html">
+                        <img src="./img/big-mac-sauce.jpg" 
+                             alt="Big Mac Sauce" 
+                             class="recipe-image" 
+                             width="300" 
+                             height="200">
+                        <h2>DIY Big Mac Sauce</h2>
+                    </a>
+                </li>
 
-    <p>Enjoy your homemade sauces!</p>
+                <li class="recipe-item">
+                    <a href="./diy-mayonnaise/index.html">
+                        <img src="./img/mayonnaise.jpg" 
+                             alt="Homemade Mayonnaise" 
+                             class="recipe-image" 
+                             width="300" 
+                             height="200">
+                        <h2>DIY Mayonnaise</h2>
+                    </a>
+                </li>
 
+                <li class="recipe-item">
+                    <a href="./diy-ketchup/index.html">
+                        <img src="./img/ketchup.jpg" 
+                             alt="Homemade Ketchup" 
+                             class="recipe-image" 
+                             width="300" 
+                             height="200">
+                        <h2>DIY Ketchup</h2>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Enjoy your homemade sauces! 🍔</p>
+    </footer>
 </body>
 </html>
