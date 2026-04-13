@@ -1,4 +1,4 @@
-new-item / code = create file
+new-item / touch = create file
 rm = remove file
 mkdir = make directory / folder
 rmdir = remove directory
