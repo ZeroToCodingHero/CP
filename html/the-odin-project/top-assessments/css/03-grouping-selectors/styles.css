@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.btn1, 
+.btn2 {
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', serif sans-serif;
+    padding: 10px 10px;
+    margin: 10px 1px;
+    border: gray solid 1px;
+    cursor: pointer;
+}
+.btn1 {
+    background-color: black;
+    color: white;
+}
+.btn2 {
+    background-color: yellow;
+    color: black;
+}
