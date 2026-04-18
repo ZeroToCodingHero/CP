@@ -18,3 +18,6 @@ help = finding help
 hostname = network name
 exit = exiting your terminal
 dir-r = finding files
+
+
+ping -n 8.8.8.8
