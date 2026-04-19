@@ -20,4 +20,7 @@ exit = exiting your terminal
 dir-r = finding files
 
 
-ping -n 8.8.8.8
+ping -n 100 8.8.8.8 or 1.1.1.1 or 9.9.9.9
+ping -n 100 192.168.x.x
+
+pathping 1.1.1.1
