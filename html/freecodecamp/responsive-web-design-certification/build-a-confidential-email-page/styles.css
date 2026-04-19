@@ -1,0 +1,53 @@
+#email {
+  position: relative;           /* Very important for absolute positioning */
+  background-color: tan;
+  padding: 60px 70px;           /* More balanced padding */
+  margin: 50px auto;            /* Centers the document */
+  width: 600px;                 /* Slightly wider for better look */
+  border: 10px solid black;     /* Fixed: was missing solid */
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  font-family: Georgia, serif;
+  line-height: 1.7;
+}
+
+#confidential,
+#top-secret {
+  position: absolute;
+  color: red;
+  border: 4px solid red;
+  padding: 8px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 28px;
+  opacity: 0.9;
+  pointer-events: none;         /* Prevents interfering with text */
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+}
+
+/* CONFIDENTIAL stamp - positioned on the right */
+#confidential {
+  top: 50px;
+  right: 40px;                  /* Moved further right */
+  transform: rotate(-25deg);    /* Nice dramatic angle */
+}
+
+/* TOP SECRET stamp - positioned lower on the right */
+#top-secret {
+  bottom: 90px;
+  right: 50px;                  /* Moved further right */
+  transform: rotate(12deg);
+  font-size: 24px;
+  padding: 6px 25px;
+}
+
+/* Blur effect */
+.blurred {
+  filter: blur(3px);
+  transition: filter 0.4s ease;
+}
+
+.blurred:hover {
+  filter: blur(0px);
+}
