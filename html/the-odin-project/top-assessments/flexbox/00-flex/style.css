@@ -1,17 +1,35 @@
+* {
+  border: 1px solid red;
+} 
 .flex-container {
+  height: 140px;
+  width: 400px;
+  border: blue solid 4px;
+  background: lightgray;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /**flex-basis row = width and column = height */
+  justify-content: space-evenly; /* main axis */
+  align-items: center; /* cross axis */
+  gap: 8px; 
 }
 
 /* this selector selects all divs inside of .flex-container */
 .flex-container div {
   background: peachpuff;
-  border: 4px solid brown;
-  height: 80px;
-  flex: 1 1 auto;
+  padding: 12px;
+  border: 4px solid blue;
+  width: 60px;
+  height: 60px;
+  margin: 4px;
+  /*flex: 1 1 auto;*/
+  /* flex-grow: 2; flex-shrink: 0; flex-basis: 0; */
 }
 
 /* only div.two is selected here */
 .flex-container .two {
-  flex: 1 1 auto;
+  background: lightblue;
 }
+.flex-container .three {
+  background: green;
+}
+ 
